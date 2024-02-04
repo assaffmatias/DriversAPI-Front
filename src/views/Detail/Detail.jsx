@@ -2,7 +2,7 @@ import style from './Detail.module.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect, useState } from 'react';
-import { getDriverById } from '../../redux/actions';
+import { getDriverById, resetDetail } from '../../redux/actions';
 
 const Detail = () => {
     const { id } = useParams();
@@ -14,7 +14,10 @@ const Detail = () => {
     const [showInfo, setShowInfo] = useState(true);
 
     useEffect(() => {
-        dispatch(getDriverById(id))
+        dispatch(getDriverById(id));
+        return () => {
+            dispatch(resetDetail());
+        }
     }, [id])
 
     const handleInfoClick = () => {

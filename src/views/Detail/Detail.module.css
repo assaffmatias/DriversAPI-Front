@@ -168,10 +168,12 @@
         color: #000;
     }
 
+    .second{
+        height: 50%;
+    }
+
     .showDescription {
-        max-height: 20vh;
-        overflow-y: auto;
-        overflow-x: hidden;
+        max-height: 27vh;
     }
 
 }

@@ -1,4 +1,4 @@
-import { GET_DRIVERS, GET_DRIVER_ID, GET_TEAMS, POST_DRIVER, FILTER, ORDER, SELECT_TEAM, HANDLE_ERROR, RESET_DETAIL } from "./actions";
+import { GET_DRIVERS, GET_DRIVER_ID, GET_TEAMS, POST_DRIVER, FILTER, ORDER, SELECT_TEAM, HANDLE_ERROR, RESET_DETAIL, DELETE_DRIVER } from "./actions";
 
 const initialState = {
     drivers: [],
@@ -43,21 +43,27 @@ const rootReducer = (state = initialState, action) => {
         case ORDER:
 
             let orderedDrivers;
-
-            action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
-                : action.payload === "nameFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => b.name.localeCompare(a.name))
-                    : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))
-                        : action.payload === "dobFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(b.dob) - new Date(a.dob))
+            action.payload === "default" ? orderedDrivers = state.drivers.slice().sort((a,b) => a.id - b.id)
+                : action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
+                    : action.payload === "nameFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => b.name.localeCompare(a.name))
+                        : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))
+                            : action.payload === "dobFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(b.dob) - new Date(a.dob))
                                 : undefined
-                                
+
             return { ...state, drivers: orderedDrivers }
 
 
         case SELECT_TEAM:
             return { ...state, selectedTeam: action.payload }
 
+        case RESET_DETAIL:
+            return { ...state, driverDetail: [] }
+
+        case DELETE_DRIVER:
+            return {...state, drivers: state.drivers.filter((driv)=> driv.id !== action.payload)}
+
         default:
-            return { ...state}
+            return { ...state }
     }
 }
 

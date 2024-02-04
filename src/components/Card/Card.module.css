@@ -53,6 +53,16 @@
     margin-left: 1em;
 }
 
+.button{
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    border: none;
+    background-color: #e00504;
+    color: #fff;
+    margin-left: 2em;
+    border-radius: 3px;
+}
+
 @media screen and (min-width: 768px) {
     .container{
         margin-bottom: 1em;

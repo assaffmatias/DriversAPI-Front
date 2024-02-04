@@ -3,15 +3,17 @@ import Card from "../Card/Card"
 import Paginated from "../Paginated/Paginated";
 import Filter from "../Filter/Filter"
 import Order from "../Order/Order";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 import bg from '../../assets/background2.png'
+import { deleteDriver } from "../../redux/actions";
 
 const CardsContainer = () => {
 
     const drivers = useSelector(state => state.drivers);
     const filterCreated = useSelector((state) => state.filterCreated);
     const selectedTeam = useSelector(state => state.selectedTeam)
+    const dispatch = useDispatch()
 
     const [page, setPage] = useState(1);
     const [perPage, setPerPage] = useState(9)
@@ -24,6 +26,10 @@ const CardsContainer = () => {
     });
 
     const max = Math.ceil(filteredDrivers.length / perPage);
+
+    const onClose = (id) => {
+        dispatch(deleteDriver(id))        
+     }
 
     return (
         <div className={style.container}>
@@ -63,6 +69,7 @@ const CardsContainer = () => {
                                 teams={driver.teams}
                                 nationality={driver.nationality}
                                 backgroundColor={backgroundColor}
+                                onClose={onClose}
                             />
                         )
                     })}

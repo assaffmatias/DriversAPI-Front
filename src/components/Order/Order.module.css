@@ -31,36 +31,6 @@
   color: #e00504;
 }
 
-/* .input {
-    display: flex;
-    flex-direction: row;
-    width: 32em;
-    height: 8px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .value {
-    font-family: "Formula1 Display Bold Bold";
-    font-weight: 500;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 0 10px 0 10px;
-  }
-
-  .value:hover{
-    color: #e00504;
-  }
-
-  .value.selected{
-    color: #e00504;
-  } */
-
 @media screen and (min-width: 768px) {
   .value {
     display: block;
