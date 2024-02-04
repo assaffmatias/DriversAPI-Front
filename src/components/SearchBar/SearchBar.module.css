@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.group {
+  display: flex;
+  line-height: 28px;
+  position: relative;
+  align-items: center;
+}
+
+.input {
+  width: 1em;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  outline: none;
+  background-color: transparent;
+  color: #0d1117;
+  transition: .5s ease;
+}
+
+.input:focus {
+  width: 10em;
+  margin-right: 1em;
+  background-color: #fff;
+}
+
+.input::placeholder {
+  color: #0d1117;
+}
+
+.group:focus-within .icon
+ {
+  fill: black;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #fff;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .group{
+    margin-right: 2em;
+    cursor: pointer;
+  }
+
+  .icon{
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  .input:focus{
+    width: 20em;
+  }
+}

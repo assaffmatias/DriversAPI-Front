@@ -1,0 +1,235 @@
+@import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
+
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 15vh;
+  background-image: url('../../assets/background1.jpg');
+}
+
+.h1 {
+  font-family: "Formula1 Display Bold Bold";
+  color: #ebeaea;
+  margin: 0;
+  margin-left: 0.6em;
+}
+
+.line {
+  width: 6.5em;
+  height: 8px;
+  background-color: #e00504;
+}
+
+.img {
+  display: none;
+}
+
+.form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 2em;
+  width: 100vw;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+}
+
+.label {
+  display: flex;
+  width: 100%;
+  margin-bottom: .5em;
+}
+
+.input {
+  font-family: "Formula1 Display Bold Bold";
+  width: 100%;
+  height: 2.5em;
+  border: 1px solid #0d1117;
+  padding-left: 1em;
+}
+
+.selectNat {
+  font-family: "Formula1 Display Bold Bold";
+  height: 2.5em;
+  border: 1px solid #0d1117;
+  width: 100%;
+  padding-left: 1em;
+}
+
+.select {
+  font-family: "Formula1 Display Bold Bold";
+  width: 100%;
+  border: 1px solid #0d1117;
+  height: 2.5em;
+}
+
+.button {
+  font-family: "Formula1 Display Bold Bold";
+  width: 10em;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+  background-color: #0d1117;
+  color: #fff;
+  transition: 1s;
+  border-radius: 3px;
+  margin-top: 2em;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    height: 20vh;
+  }
+
+  .h1 {
+    font-size: 3.5em;
+  }
+
+  .line {
+    width: 12%
+  }
+
+  .img {
+    display: block;
+    height: 100%;
+  }
+}
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 20vh;
+    background-image: url('../../assets/background1.jpg');
+  }
+
+  .h1{
+    font-family: "Formula1 Display Bold Bold";
+    color: #ebeaea;
+    margin-left: 0.6em;
+    font-size: 3.4em;
+    line-height: 0;
+  }
+
+  .img{
+    height: 20vh;
+  }
+
+  .line{
+    width: 12%;
+    height: 8px;
+    background-color: #e00504;
+  }
+
+  .form{
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    width: 70%;
+  }
+
+  .formDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5em;
+  }
+
+  .selectDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+  }
+
+  .input_fs{
+    font-family: "Formula1 Display Bold Bold";
+    width: 20em;
+    height: 3em;
+    border: 1px solid #0d1117;
+    margin: 1em;
+    padding-left: 1em;
+  }
+
+  .input{
+    font-family: "Formula1 Display Bold Bold";
+    width: 43.5em;
+    height: 3em;
+    border: 1px solid #0d1117;
+    margin: 2px;
+    padding-left: 1em;
+  }
+
+  .selectNat{
+    font-family: "Formula1 Display Bold Bold";
+    width: 44.5em;
+    height: 3em;
+    border: 1px solid #0d1117;
+    margin: 2px;
+    padding-left: 1em;
+  }
+
+  .select{
+    font-family: "Formula1 Display Bold Bold";
+    width: 40em;
+    height: 20em;
+    border: 1px solid #0d1117;
+  }
+
+  .select::-webkit-scrollbar {
+    width: 12px;              
+  }
+  
+  .select::-webkit-scrollbar-track {
+    background: transparent;       
+  }
+  
+  .select::-webkit-scrollbar-thumb {
+    background-color: #0d1117;   
+    border-radius: 20px;       
+    border: 3px solid #0d1117; 
+  }
+
+  .button{
+    font-family: "Formula1 Display Bold Bold";
+    width: 10em;
+    height: 3.5em;
+    border: none;
+    cursor: pointer;
+    background-color: #0d1117;
+    color: #fff;
+    transition: 1s;
+    border-radius: 3px;
+  }
+
+  .button:hover{
+    background-color: #e00504;
+  }
+
+  .error {
+    border: 1px solid red;
+  }
+  
+  .success {
+    border: 1px solid green;
+  } */

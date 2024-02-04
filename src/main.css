@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: #fafafa !important; */
+    background-image: url('../public/background.jpg');
+    user-select: none;
+    overflow-x: hidden;
+}
