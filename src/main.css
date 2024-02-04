@@ -5,4 +5,6 @@ body {
     background-image: url('../public/background.jpg');
     user-select: none;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -tap-highlight-color: transparent;
 }
