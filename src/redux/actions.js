@@ -10,12 +10,12 @@ export const HANDLE_ERROR = "HANDLE_ERROR";
 export const RESET_DETAIL = "RESET_DETAIL";
 
 // axios.defaults.baseURL = "http://localhost:3001";
-// axios.defaults.baseURL = "https://f1-back-production.up.railway.app"
+// axios.defaults.baseURL = "driversapi-back-production.up.railway.app"
 
 export const getDrivers = (name) => {
     return async function (dispatch) {
         try {
-            let url = "https://f1-back-production.up.railway.app/drivers/";
+            let url = "driversapi-back-production.up.railway.app/drivers/";
 
             if (name) {
                 url += `?name=${name}`;
@@ -34,7 +34,7 @@ export const getDrivers = (name) => {
 
 export const getDriverById = (id) => {
     return async function (dispatch) {
-        const apiData = await axios.get(`https://f1-back-production.up.railway.app/drivers/${id}`)
+        const apiData = await axios.get(`https://driversapi-back-production.up.railway.app/drivers/${id}`)
 
         const driver = apiData.data;
         dispatch({ type: GET_DRIVER_ID, payload: driver })
@@ -43,7 +43,7 @@ export const getDriverById = (id) => {
 
 export const postDriver = (form) => {
     return async function (dispatch) {
-        const apiData = await axios.post("https://f1-back-production.up.railway.app/drivers/", form);
+        const apiData = await axios.post("https://driversapi-back-production.up.railway.app/drivers/", form);
 
         const driver = apiData.data
         dispatch({ type: POST_DRIVER, payload: driver })
@@ -52,7 +52,7 @@ export const postDriver = (form) => {
 
 export const getTeams = () => {
     return async function (dispatch) {
-        const apiData = await axios.get("https://f1-back-production.up.railway.app/teams/");
+        const apiData = await axios.get("https://driversapi-back-production.up.railway.app.app/teams/");
 
         const teams = apiData.data
         dispatch({ type: GET_TEAMS, payload: teams })
