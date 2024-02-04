@@ -123,6 +123,10 @@
     display: none;
   }
 
+  .h3{
+    font-size: 1em;
+  }
+
   .teams {
     display: block;
     font-family: "Formula1 Display Bold Bold";
@@ -134,8 +138,8 @@
 
   .filters{
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    margin-top: 5em;
   }
 }

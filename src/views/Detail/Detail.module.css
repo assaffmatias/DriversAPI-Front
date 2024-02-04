@@ -81,6 +81,7 @@
 
 .second {
     font-family: 'Signika', sans-serif;
+    height: 70%;
     margin: 1em;
 }
 
@@ -111,7 +112,7 @@
 }
 
 .showDescription {
-    max-height: 7em;
+    max-height: 35vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -143,7 +144,7 @@
 
     .img{
         width: 200px;
-        height: 200px;
+        height: 210px;
     }
 
     .div_names{
@@ -166,12 +167,19 @@
     .close:hover{
         color: #000;
     }
+
+    .showDescription {
+        max-height: 20vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (max-width:950px) and (min-width:768px){
     .img{
         width: 170px;
-        height: 170px;
+        height: 180px;
     }
     .div_names{
         margin-top: 5em;

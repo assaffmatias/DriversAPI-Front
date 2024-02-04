@@ -80,6 +80,20 @@
   height: 2.5em;
 }
 
+.select::-webkit-scrollbar {
+  width: 12px;              
+}
+
+.select::-webkit-scrollbar-track {
+  background: transparent;       
+}
+
+.select::-webkit-scrollbar-thumb {
+  background-color: #0d1117;   
+  border-radius: 20px;       
+  border: 3px solid #0d1117; 
+}
+
 .button {
   font-family: "Formula1 Display Bold Bold";
   width: 10em;
@@ -109,6 +123,14 @@
   .img {
     display: block;
     height: 100%;
+  }
+
+  .select{
+    height: 10em;
+  }
+
+  .button {
+    margin-bottom: 1em;
   }
 }
 
