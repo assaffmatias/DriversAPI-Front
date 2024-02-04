@@ -43,7 +43,14 @@ const rootReducer = (state = initialState, action) => {
         case ORDER:
 
             let orderedDrivers;
-            action.payload === "default" ? orderedDrivers = state.drivers.slice().sort((a,b) => a.id - b.id)
+            action.payload === "default" ? orderedDrivers = state.drivers.slice().sort((a,b) => {
+                if (a.created && !b.created) {
+                    return -1;
+                  } else if (!a.created && b.created) {
+                    return 1;
+                  }
+                  return a.id - b.id;
+            })
                 : action.payload === "nameUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => a.name.localeCompare(b.name))
                     : action.payload === "nameFalling" ? orderedDrivers = state.drivers.slice().sort((a, b) => b.name.localeCompare(a.name))
                         : action.payload === "dobUpward" ? orderedDrivers = state.drivers.slice().sort((a, b) => new Date(a.dob) - new Date(b.dob))

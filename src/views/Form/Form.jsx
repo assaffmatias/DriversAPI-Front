@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import style from './Form.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { getTeams, postDriver } from '../../redux/actions';
-import swal from 'sweetalert'
 import bg from '../../assets/background2.png'
 
 const Form = () => {
@@ -167,7 +166,6 @@ const Form = () => {
     const submitHandler = async (event) => {
         event.preventDefault();
         await dispatch(postDriver(form))
-        swal("Driver Created!", "Press OK to continue", "success");
     }
 
     return (

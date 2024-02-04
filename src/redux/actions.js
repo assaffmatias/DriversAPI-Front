@@ -11,9 +11,6 @@ export const RESET_DETAIL = "RESET_DETAIL";
 export const DELETE_DRIVER = "DELETE_DRIVER";
 import swal from 'sweetalert'
 
-// axios.defaults.baseURL = "http://localhost:3001";
-// axios.defaults.baseURL = "driversapi-back-production.up.railway.app"
-
 export const getDrivers = (name) => {
     return async function (dispatch) {
         try {
@@ -46,11 +43,17 @@ export const getDriverById = (id) => {
 
 export const postDriver = (form) => {
     return async function (dispatch) {
-        const apiData = await axios.post("https://driversapi-back-production.up.railway.app/drivers/", form);
-        // const apiData = await axios.post("http://localhost:3001/drivers/", form);
+        try {
+            const apiData = await axios.post("https://driversapi-back-production.up.railway.app/drivers/", form);
+            // const apiData = await axios.post("http://localhost:3001/drivers/", form);
 
-        const driver = apiData.data
-        dispatch({ type: POST_DRIVER, payload: driver })
+            const driver = apiData.data
+            dispatch({ type: POST_DRIVER, payload: driver })
+            swal("Driver Created!", "Press OK to continue", "success");
+        } catch (error) {
+            swal("ERROR", "COMPLETE ALL FIELDS", "error");
+        }
+
     };
 };
 
@@ -99,7 +102,7 @@ export const deleteDriver = (id) => {
             // await axios.delete(`http://localhost:3001/drivers/${id}`);
 
             dispatch({ type: DELETE_DRIVER, payload: id });
-            
+
             swal("Deleted Driver", "Press OK to continue", "success");
         } catch (error) {
             console.error("Error deleting driver", error);
