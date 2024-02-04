@@ -19,6 +19,7 @@
 .info {
     display: flex;
     font-family: 'Titillium Web', sans-serif;
+    align-items: center;
 }
 
 .link {
