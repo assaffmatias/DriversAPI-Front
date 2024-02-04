@@ -15,7 +15,7 @@ export const RESET_DETAIL = "RESET_DETAIL";
 export const getDrivers = (name) => {
     return async function (dispatch) {
         try {
-            let url = "driversapi-back-production.up.railway.app/drivers/";
+            let url = "https://driversapi-back-production.up.railway.app/drivers/";
 
             if (name) {
                 url += `?name=${name}`;
@@ -52,7 +52,7 @@ export const postDriver = (form) => {
 
 export const getTeams = () => {
     return async function (dispatch) {
-        const apiData = await axios.get("https://driversapi-back-production.up.railway.app.app/teams/");
+        const apiData = await axios.get("https://driversapi-back-production.up.railway.app/teams/");
 
         const teams = apiData.data
         dispatch({ type: GET_TEAMS, payload: teams })
