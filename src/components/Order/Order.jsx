@@ -17,10 +17,10 @@ const Order = () => {
         <>
             <div className={style.input}>
                 {/* <button className={`${style.value} ${selectedOrder === 'default' && style.selected}`} onClick={() => handleOrder("default")}>None</button> */}
-                <button className={`${style.value} ${selectedOrder === 'nameUpward' && style.selected}`} onClick={() => handleOrder("nameUpward")}>Name Up</button>
-                <button className={`${style.value} ${selectedOrder === 'nameFalling' && style.selected}`} onClick={() => handleOrder("nameFalling")}>Name Fall</button>
-                <button className={`${style.value} ${selectedOrder === 'dobUpward' && style.selected}`} onClick={() => handleOrder("dobUpward")}>DOB Up</button>
-                <button className={`${style.value} ${selectedOrder === 'dobFalling' && style.selected}`} onClick={() => handleOrder("dobFalling")}>DOB Fall</button>
+                <button className={`${style.value} ${selectedOrder === 'nameUpward' && style.selected}`} onClick={() => handleOrder("nameUpward")}>Name ↑</button>
+                <button className={`${style.value} ${selectedOrder === 'nameFalling' && style.selected}`} onClick={() => handleOrder("nameFalling")}>Name ↓</button>
+                <button className={`${style.value} ${selectedOrder === 'dobUpward' && style.selected}`} onClick={() => handleOrder("dobUpward")}>DOB ↑</button>
+                <button className={`${style.value} ${selectedOrder === 'dobFalling' && style.selected}`} onClick={() => handleOrder("dobFalling")}>DOB ↓</button>
             </div>
         </>
     )

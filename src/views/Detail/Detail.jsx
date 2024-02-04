@@ -43,7 +43,7 @@ const Detail = () => {
                                     </div>
                                     <div className={style.div_info_left}>
                                         <div className={style.div_button_close}>
-                                            <button className={style.close} onClick={handleGoBack}>X</button>
+                                            <button className={style.close} onClick={handleGoBack}>✘</button>
                                         </div>
                                         <div className={style.div_names}>
                                             <h2 className={style.name}>{driver.name}</h2>
