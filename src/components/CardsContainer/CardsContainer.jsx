@@ -32,6 +32,7 @@ const CardsContainer = () => {
                 <img src={bg} alt="" className={style.img} />
             </div>
             <div className={style.line}></div>
+            <h2 className={style.h2}>Build your driver line-up using F1® Driver Database</h2>
             <div className={style.filters}>
                 <Filter onFilterChange={() => setPage(1)} />
             </div>

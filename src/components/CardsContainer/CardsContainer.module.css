@@ -1,4 +1,5 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
+@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
 
 .container {
   display: flex;
@@ -26,6 +27,11 @@
   background-color: #e00504;
 }
 
+.h2{
+  font-family: "Orgon W03 Bold";
+  margin-left: 1em;
+}
+
 .img {
   display: none;
 }
@@ -42,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2em;
+  margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
   height: 2em;
@@ -72,7 +78,7 @@
   color: #fff;
   margin-left: 1em;
   margin-right: 1em;
-  font-size: 1em;
+  font-size: .8em;
 }
 
 .teams {

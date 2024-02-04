@@ -26,8 +26,9 @@
 }
 
 .h1 {
-    font-size: .7em;
+    font-size: .9em;
     color: #0d1117;
+    margin: 0;
     margin-left: 1em;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .nationality {
-    font-size: .7em;
+    font-size: .9em;
     margin-left: 1em;
 }
 

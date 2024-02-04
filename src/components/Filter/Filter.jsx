@@ -32,12 +32,6 @@ const Filter = ({onFilterChange}) => {
 
     return (
         <>
-            <div className={style.input}>
-                <button className={`${style.value} ${selectedFilter === 'all' && style.selected}`} onClick={() => handleFilter("all")}>All Drivers</button>
-                <button className={`${style.value} ${selectedFilter === 'created' && style.selected}`} onClick={() => handleFilter("created")}>Created</button>
-                <button className={`${style.value} ${selectedFilter === 'notCreated' && style.selected}`} onClick={() => handleFilter("notCreated")}>Not Created</button>
-            </div>
-
             <div className={style.divSelect}>
                 <select className={style.select} name="" id="" onChange={handleFilterTeam}>
                 <option value="">Select Team</option>
@@ -47,6 +41,11 @@ const Filter = ({onFilterChange}) => {
                         </option>
                     ))}
                 </select>
+            </div>
+            <div className={style.input}>
+                <button className={`${style.value} ${selectedFilter === 'all' && style.selected}`} onClick={() => handleFilter("all")}>All Drivers</button>
+                <button className={`${style.value} ${selectedFilter === 'created' && style.selected}`} onClick={() => handleFilter("created")}>Created</button>
+                <button className={`${style.value} ${selectedFilter === 'notCreated' && style.selected}`} onClick={() => handleFilter("notCreated")}>Not Created</button>
             </div>
         </>
     )
