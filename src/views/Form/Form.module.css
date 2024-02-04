@@ -1,5 +1,5 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
-
+@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
 
 .content {
   display: flex;
@@ -28,9 +28,7 @@
 
 .form {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
   margin-top: 2em;
   width: 100vw;
 }
@@ -39,7 +37,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70vw;
+  width: 90vw;
+}
+
+.lab{
+  display: flex;
+  width: 100%;
+  margin-bottom: .3em;
+  font-family: "Orgon W03 Bold";
 }
 
 .label {
@@ -53,7 +58,11 @@
   width: 100%;
   height: 2.5em;
   border: 1px solid #0d1117;
-  padding-left: 1em;
+  padding-left: .5em;
+}
+
+.input::placeholder{
+  color: #0d11176e;
 }
 
 .selectNat {
@@ -61,7 +70,7 @@
   height: 2.5em;
   border: 1px solid #0d1117;
   width: 100%;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 
 .select {

@@ -180,21 +180,27 @@ const Form = () => {
 
             <form onSubmit={submitHandler} className={style.form}>
                 <div className={style.flex}>
+                    <label htmlFor="" className={style.lab}>First name *</label>
                     <label htmlFor="" className={style.label}>
-                        <input type="text" value={form.name} onChange={changeHandler} name='name' className={`${style.input} ${errors.name ? style.error : style.success}`} placeholder='Name*' />
+                        <input type="text" value={form.name} onChange={changeHandler} name='name' className={`${style.input} ${errors.name ? style.error : style.success}`} placeholder='John' />
                     </label>
+                    <label htmlFor="" className={style.lab}>Last name *</label>
                     <label htmlFor="" className={style.label}>
-                        <input type="text" value={form.surname} onChange={changeHandler} name='surname' className={`${style.input} ${errors.surname ? style.error : style.success}`} placeholder='Last name*' />
+                        <input type="text" value={form.surname} onChange={changeHandler} name='surname' className={`${style.input} ${errors.surname ? style.error : style.success}`} placeholder='Smith' />
                     </label>
+                    <label htmlFor="" className={style.lab}>Image URL</label>
                     <label htmlFor="" className={style.label}>
                         <input type="text" value={form.image} onChange={changeHandler} name='image' className={style.input} placeholder='https://url.com/image.jpg' />
                     </label>
+                    <label htmlFor="" className={style.lab}>Description *</label>
                     <label htmlFor="" className={style.label}>
-                        <input type="text" value={form.description} onChange={changeHandler} name='description' className={style.input} placeholder='Description*' />
+                        <input type="text" value={form.description} onChange={changeHandler} name='description' className={style.input} placeholder='' />
                     </label>
+                    <label htmlFor="" className={style.lab}>Birthdate *</label>
                     <label htmlFor="" className={style.label}>
                         <input type="date" value={form.dob} onChange={changeHandler} name='dob' className={style.input} placeholder='mm/dd/yyyy' />
                     </label>
+                    <label htmlFor="" className={style.lab}>Nationality *</label>
                     <label htmlFor="nationality" className={style.label}>
                         <select
                             id="nationality"
@@ -209,6 +215,7 @@ const Form = () => {
                             ))}
                         </select>
                     </label>
+                    <label htmlFor="" className={style.lab}>Team *</label>
                     <label htmlFor="" className={style.label}>
                         <select name="teams" id="" value={form.teams} onChange={changeHandler} multiple className={style.select}>
                             {teams.map((team) => (
