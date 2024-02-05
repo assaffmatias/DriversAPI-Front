@@ -63,9 +63,9 @@ const Detail = () => {
                                     <div className={style.show}>
                                     {showInfo ? (
                                         <div>
-                                            <p>Nationality ⤑ {driver.nationality}</p>
-                                            <p>Birthdate ⤑ {driver.dob}</p>
-                                            <p>Teams ⤑ {driver.teams}</p>
+                                            <p>Nationality: {driver.nationality}</p>
+                                            <p>Birthdate: {driver.dob}</p>
+                                            <p>Teams: {driver.teams}</p>
                                         </div>
                                     ) : (
                                         <div className={style.showDescription}>
