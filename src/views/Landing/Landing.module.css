@@ -30,8 +30,8 @@
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
+  width: 250px;
+  height: 50px;
 }
 
 .h2 {
@@ -89,18 +89,23 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .content{
+    justify-content: flex-start;
+    margin-top: 3em;
+  }
 
   .div_video{
     height: 80vh;
   }
 
   .logo {
+    height: 100px;
     width: 450px;
-    height: 220px;
   }
 
   .h2{
     font-size: 5em;
+    margin-bottom: .5em;
   }
   .divButtons {
     flex-direction: row;

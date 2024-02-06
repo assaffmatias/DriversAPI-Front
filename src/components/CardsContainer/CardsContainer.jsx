@@ -47,7 +47,6 @@ const CardsContainer = () => {
                 <div className={style.orderDesktop}>
                     <Order />
                 </div>
-                <h3 className={style.teams}>Teams</h3>
                 <h3 className={style.nationality}>Nationality</h3>
             </div>
 
@@ -66,7 +65,7 @@ const CardsContainer = () => {
                                 name={driver.name}
                                 surname={driver.surname.toUpperCase()}
                                 image={driver.image}
-                                teams={driver.teams}
+                                // teams={driver.teams}
                                 nationality={driver.nationality}
                                 backgroundColor={backgroundColor}
                                 onClose={onClose}

@@ -16,8 +16,7 @@ const Card = (props) => {
                     <button className={style.button} onClick={() => onClose(props.id)}>DELETE</button>
                 )}
                 </div>
-                <div className={style.teams}>
-                    <h2 className={style.team}>{props.teams}</h2>
+                <div className={style.nat}>
                     <h2 className={style.nationality}>{props.nationality}</h2>
                 </div>
             </div>

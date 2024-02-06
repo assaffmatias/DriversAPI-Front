@@ -61,7 +61,7 @@
 .dataOrder{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 0.5em;
   margin-left: 1em;
   margin-right: 1em;
@@ -84,11 +84,7 @@
   font-size: .8em;
 }
 
-.teams {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
 
   .content{
     height: 20vh;
@@ -126,19 +122,10 @@
   }
 
   .nationality {
-    display: none;
-  }
-
-  .h3{
     font-size: 1em;
   }
 
-  .teams {
-    display: block;
-    font-family: "Formula1 Display Bold Bold";
-    color: #fff;
-    margin-left: 1em;
-    margin-right: 1em;
+  .h3{
     font-size: 1em;
   }
 

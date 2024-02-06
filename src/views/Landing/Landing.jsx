@@ -2,7 +2,7 @@ import style from './Landing.module.css';
 import porsche from '../../assets/porsche.png'
 import mclaren from '../../assets/mclaren.png'
 import redbull from '../../assets/redbull.png'
-import logo from '../../assets/logo2.png'
+import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 import PATHROUTES from '../../helpers/PathRoutes';
 import video from '../../assets/fondo.mp4'

@@ -38,14 +38,10 @@
     color: #e00504;
 }
 
-.teams {
+.nat {
     font-family: 'Titillium Web', sans-serif;
     margin-right: 1em;
     text-align: start;
-}
-
-.team {
-    display: none;
 }
 
 .nationality {
@@ -77,13 +73,7 @@
         font-size: 1.1em;
     }
 
-    .team {
-        display: block;
-        font-size: 1.1em;
-        margin-left: 2em;
-    }
-
     .nationality {
-        display: none;
+       font-size: 1.1em;
     }
 }
