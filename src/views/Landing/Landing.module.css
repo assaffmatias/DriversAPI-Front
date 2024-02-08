@@ -207,9 +207,10 @@
 
 .p_footer{
   font-family: "Orgon W03 Bold";
-  color: #cfcfcf;
+  color: #8d8d8d;
   padding-right: 10px;
   padding-left: 10px;
+  font-size: .5em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -244,6 +245,10 @@
 
   .p {
     font-size: 1.5em;
+  }
+
+  .div_p_create{
+    width: 50%;
   }
 
   .technologies{
