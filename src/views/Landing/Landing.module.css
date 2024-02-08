@@ -142,6 +142,8 @@
 .create{
   font-family: "Formula1 Display Bold Bold";
   color: #fff;
+  margin-bottom: 0;
+  margin-top: .5em;
 }
 
 .div_p_create{
@@ -149,8 +151,9 @@
 }
 
 .p_create{
-  font-family: "Formula1 Display Bold Bold";
+  font-family: "Orgon W03 Bold";
   color: #fff;
+  margin-top: 0;
 }
 
 .div_technologies{
@@ -164,11 +167,11 @@
   font-family: "Formula1 Display Bold Bold";
   font-size: 2em;
   color: #0d1117;
-  margin-bottom: .5em;
+  margin-bottom: .3em;
 }
 
 .line_title {
-  width: 100px;
+  width: 150px;
   height: 12px;
   background-color: #e00504;
   color: transparent;
@@ -178,8 +181,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-left: 1em;
-  margin-top: 4em;
-  margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 4em;
 }
 
 .logos_content{
@@ -238,6 +241,10 @@
     color: #0d1117;
   }
 
+  .div_wellcome{
+    margin-bottom: 5em;
+  }
+
   .wellcome {
     font-size: 7em;
     margin-top: .2em;
@@ -251,11 +258,19 @@
     width: 50%;
   }
 
+  .p_create{
+    font-size: 1.3em;
+  }
+
   .technologies{
-    font-size: 2.5em;
+    font-size: 3em;
   }
 
   .create{
     font-size: 3em;
+  }
+
+  .p_footer{
+    font-size: .7em;
   }
 }
