@@ -1,14 +1,23 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
+@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
+
 
 .container {
   display: flex;
   flex-direction: column;
 }
 
+.container2 {
+  position: relative;
+  width: 100vw;
+  height: 850px;
+  background-color: #0d1117;
+}
+
 .div_video {
   position: absolute;
-  width: 100vw;
-  height: 85vh;
+  width: 100%;
+  height: 100%;
 }
 
 .video {
@@ -25,8 +34,8 @@
   align-items: center;
   position: absolute;
   z-index: 3;
-  width: 100vw;
-  height: 80vh;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -54,7 +63,6 @@
   background-color: #e00504;
   border: none;
   cursor: pointer;
-  border-radius: 3px;
   width: 18em;
   height: 3.5em;
   margin: 0.4em;
@@ -68,8 +76,6 @@
 }
 
 .line {
-  position: absolute;
-  top: 93vh;
   width: 25%;
   height: 8px;
   background-color: #e00504;
@@ -88,14 +94,46 @@
   width: 35px;
 }
 
-@media only screen and (min-width: 768px) {
-  .content{
-    justify-content: flex-start;
-    margin-top: 3em;
-  }
+.div_wellcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background-color: #e00504; */
+  align-items: center;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
 
-  .div_video{
-    height: 80vh;
+.wellcome {
+  font-family: "Formula1 Display Bold Bold";
+  font-size: 3.5em;
+  color: #0d1117;
+  margin-bottom: 0;
+}
+
+.p {
+  font-family: "Orgon W03 Bold";
+  color: #0d1117c4;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.button3 {
+  font-family: "Formula1 Display Bold Bold";
+  background-image: url('../../assets/background3.jpg');
+  border: none;
+  cursor: pointer;
+  width: 18em;
+  height: 3.5em;
+  margin: 0.4em;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .container2 {
+    height: 500px;
   }
 
   .logo {
@@ -103,27 +141,26 @@
     width: 450px;
   }
 
-  .h2{
+  .h2 {
     font-size: 5em;
     margin-bottom: .5em;
   }
+
   .divButtons {
     flex-direction: row;
   }
 
-  .button:hover{
-    color: #0d1117;
-  }
-  
-  .button1:hover{
+  .button:hover,
+  .button1:hover {
     color: #0d1117;
   }
 
-  .line{
-    top: 92vh
+  .wellcome {
+    font-size: 7em;
+    margin-top: 0;
   }
 
-  .footer{
-    top: 94vh;
+  .p {
+    font-size: 1.5em;
   }
 }
