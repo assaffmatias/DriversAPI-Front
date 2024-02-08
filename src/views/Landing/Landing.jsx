@@ -81,7 +81,7 @@ const Landing = () => {
             </div>
             <div>
                 <footer className={style.footer}>
-                    <p className={style.p_footer}>© 2024 Matias Assaff. All rights reserved. This driver API is protected by copyright. </p>
+                    <p className={style.p_footer}>© 2024 Matias Assaff. All rights reserved. This F1® Drivers API is protected by copyright. </p>
                 </footer>
             </div>
 
