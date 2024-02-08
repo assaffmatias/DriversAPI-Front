@@ -12,17 +12,9 @@ const NavBar = ({ onSearch }) => {
         return null;
     }
 
-    // const allowedRoutes = [
-    //     PATHROUTES.ABOUT,
-    //     PATHROUTES.CREATE,
-    //     PATHROUTES.DETAIL,
-    //     PATHROUTES.DRIVERS,
-    //     PATHROUTES.HOME
-    //   ];
-
-    //   if (!allowedRoutes.includes(location.pathname)) {
-    //     return null;
-    //   }
+    if(location.pathname === PATHROUTES.HOME) {
+        return null
+    }
 
     return (
         <div className={style.divContainer}>

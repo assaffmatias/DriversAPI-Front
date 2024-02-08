@@ -82,14 +82,6 @@
   color: transparent;
 }
 
-.footer {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  width: 100vw;
-  top: 94.5vh;
-}
-
 .teams {
   width: 35px;
 }
@@ -130,10 +122,99 @@
   color: #fff;
 }
 
+.div_create{
+  height: 500px;
+  background-image: url(../../assets/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDIzLTA1L2YxbTIzLWFubm91bmNlLXRyYWlsZXItc2NyZWVuc2hvdC0wMV8xOTIweDEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxOTIwfX19.jpg);
+  background-size: cover;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background-position: center;
+  border-top: 3px solid #e00504;
+  mask-image: linear-gradient(
+    to bottom,
+    white 60%,
+    transparent 95%
+  );
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.create{
+  font-family: "Formula1 Display Bold Bold";
+  color: #fff;
+}
+
+.div_p_create{
+  width: 70%;
+}
+
+.p_create{
+  font-family: "Formula1 Display Bold Bold";
+  color: #fff;
+}
+
+.div_technologies{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.technologies{
+  font-family: "Formula1 Display Bold Bold";
+  font-size: 2em;
+  color: #0d1117;
+  margin-bottom: .5em;
+}
+
+.line_title {
+  width: 100px;
+  height: 12px;
+  background-color: #e00504;
+  color: transparent;
+}
+
+.div_logos{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1em;
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+.logos_content{
+  display: flex;
+  justify-content: center;
+  background-image: url('../../assets/background3.jpg');
+  margin: 1em 1em;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.logos_tech{
+  cursor: pointer;
+  width: 80px;
+}
+
+.footer{
+  margin-top: 2em;
+  display: flex;
+  background-color: #0d1117;
+  border-bottom: 4px solid rgb(255, 102, 0);
+}
+
+.p_footer{
+  font-family: "Orgon W03 Bold";
+  color: #cfcfcf;
+  padding-left: 10px;
+}
+
 @media only screen and (min-width: 768px) {
 
   .container2 {
-    height: 500px;
+    height: 600px;
   }
 
   .logo {
@@ -157,10 +238,18 @@
 
   .wellcome {
     font-size: 7em;
-    margin-top: 0;
+    margin-top: .2em;
   }
 
   .p {
     font-size: 1.5em;
+  }
+
+  .technologies{
+    font-size: 2.5em;
+  }
+
+  .create{
+    font-size: 3em;
   }
 }
