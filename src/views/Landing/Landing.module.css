@@ -145,7 +145,7 @@
 }
 
 .div_p_create{
-  width: 70%;
+  width: 90%;
 }
 
 .p_create{
@@ -194,7 +194,6 @@
 }
 
 .logos_tech{
-  cursor: pointer;
   width: 80px;
 }
 
@@ -210,6 +209,7 @@
   font-family: "Orgon W03 Bold";
   color: #cfcfcf;
   padding-right: 10px;
+  padding-left: 10px;
 }
 
 @media only screen and (min-width: 768px) {
