@@ -27,7 +27,10 @@ const Landing = () => {
                 </div>
                 <div className={style.content}>
                     <img src={logo} alt="" className={style.logo} />
-                    <h2 className={style.h2}>DRIVERS API</h2>
+                    <h2 className={style.h2}>
+                        <span className={style.drivers}>DRIVERS</span>
+                        <span className={style.api}>API</span>
+                    </h2>
                     <div className={style.divButtons}>
                         <a href="#wellcome">
                             <button className={style.button1}>WELCOME</button>
@@ -81,7 +84,7 @@ const Landing = () => {
             </div>
             <div>
                 <footer className={style.footer}>
-                    <p className={style.p_footer}>© 2024 Matias Assaff. All rights reserved. This F1® Drivers API is protected by copyright. </p>
+                    <p className={style.p_footer}>© 2024 Matias Assaff. All rights reserved. F1® Drivers API is protected by copyright. </p>
                 </footer>
             </div>
 
