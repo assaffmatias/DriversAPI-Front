@@ -33,28 +33,28 @@ const CardsContainer = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.content}>
-                <h1 className={style.h1}>DRIVERS</h1>
+            <div className={style.masthead}>
+                <h1 className={style.mastheadTitle}>DRIVERS</h1>
                 <img src={bg} alt="" className={style.img} />
             </div>
-            <div className={style.line}></div>
-            <h2 className={style.h2}>Discover comprehensive data on F1® drivers through our API. Seamlessly create new drivers with ease</h2>
-            <div className={style.filters}>
+            <div className={style.divider}></div>
+            <h2 className={style.welcomeTitle}>Discover comprehensive data on F1® drivers through our API. Seamlessly create new drivers with ease</h2>
+            <div className={style.filterContent}>
                 <Filter onFilterChange={() => setPage(1)} />
             </div>
-            <div className={style.data}>
-                <h3 className={style.h3}>Driver</h3>
-                <div className={style.orderDesktop}>
+            <div className={style.orderSection}>
+                <h3 className={style.driverText}>Driver</h3>
+                <div className={style.orderForDesktop}>
                     <Order />
                 </div>
-                <h3 className={style.nationality}>Nationality</h3>
+                <h3 className={style.nationalityText}>Nationality</h3>
             </div>
 
-            <div className={style.dataOrder}>
+            <div className={style.orderForMobile}>
                 <Order></Order>
             </div>
 
-            <section className={style.section}>
+            <section className={style.driverSection}>
                 {filteredDrivers
                     .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
                     .map((driver, index) => {
@@ -65,7 +65,6 @@ const CardsContainer = () => {
                                 name={driver.name}
                                 surname={driver.surname.toUpperCase()}
                                 image={driver.image}
-                                // teams={driver.teams}
                                 nationality={driver.nationality}
                                 backgroundColor={backgroundColor}
                                 onClose={onClose}
@@ -78,7 +77,6 @@ const CardsContainer = () => {
             </div>
         </div>
     )
-
-}
+};
 
 export default CardsContainer;

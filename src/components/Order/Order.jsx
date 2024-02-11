@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Order = () => {
     const dispatch = useDispatch();
-    const [selectedOrder, setSelectedOrder] = useState(null);
+    const [selectedOrder, setSelectedOrder] = useState('default');
 
     const handleOrder = (value) => {
         // const value = event.target.value;

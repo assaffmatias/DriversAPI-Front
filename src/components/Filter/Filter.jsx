@@ -32,7 +32,7 @@ const Filter = ({onFilterChange}) => {
 
     return (
         <>
-            <div className={style.divSelect}>
+            <div className={style.selectContent}>
                 <select className={style.select} name="" id="" onChange={handleFilterTeam}>
                 <option value="">Select Team</option>
                     {teams.map((team) => (

@@ -39,24 +39,24 @@ const Detail = () => {
                     return (
                         <div className={style.container}>
                             <h1 className={style.title}>DRIVER DETAILS</h1>
-                            <div className={style.content}>
-                                <div className={style.first}>
+                            <div className={style.mainContent}>
+                                <div className={style.section}>
                                     <div>
                                         <img className={style.img} src={driver.image} alt="" />
                                     </div>
-                                    <div className={style.div_info_left}>
-                                        <div className={style.div_button_close}>
-                                            <button className={style.close} onClick={handleGoBack}>✘</button>
+                                    <div className={style.infoContainer}>
+                                        <div className={style.buttonContainer}>
+                                            <button className={style.closeButton} onClick={handleGoBack}>✘</button>
                                         </div>
-                                        <div className={style.div_names}>
+                                        <div className={style.nameContainer}>
                                             <h2 className={style.name}>{driver.name}</h2>
                                             <h2 className={style.surname}>{driver.surname}</h2>
-                                            <div className={style.line}></div>
+                                            <div className={style.divider}></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={style.second}>
-                                    <div className={style.description}>
+                                <div className={style.sectionData}>
+                                    <div className={style.descriptionContainer}>
                                         <button className={style.button} onClick={handleInfoClick}>Info</button>
                                         <button className={style.button} onClick={handleDescriptionClick}>Description</button>
                                     </div>

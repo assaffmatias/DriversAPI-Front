@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.content {
+.masthead {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -13,38 +13,38 @@
   background-image: url('../../assets/background1.jpg');
 }
 
-.h1 {
+.mastheadTitle {
   font-family: "Formula1 Display Bold Bold";
   color: #ebeaea;
   margin-left: 0.6em;
   line-height: 0;
 }
 
-.line {
+.img{
+  display: none;
+}
+
+.divider {
   width: 6.5em;
   height: 8px;
   background-color: #e00504;
 }
 
-.img{
-  display: none;
-}
-
 @media screen and (min-width: 768px){
-  .content{
+  .masthead{
     height: 20vh;
   }
 
-  .h1{
+  .mastheadTitle{
     font-size: 3.5em;
-  }
-
-  .line{
-    width: 12%
   }
 
   .img{
     display: block;
     height: 100%;
+  }
+
+  .divider{
+    width: 12%
   }
 }

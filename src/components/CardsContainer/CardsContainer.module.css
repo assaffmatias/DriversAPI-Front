@@ -1,4 +1,3 @@
-@import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
 @import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
 
 .container {
@@ -6,7 +5,7 @@
   flex-direction: column;
 }
 
-.content {
+.masthead {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -14,20 +13,23 @@
   background-image: url('../../assets/background1.jpg');
 }
 
-.h1 {
-  font-family: "Formula1 Display Bold Bold";
+.mastheadTitle {
   color: #ebeaea;
   margin-left: 0.6em;
   line-height: 0;
 }
 
-.line {
+.img {
+  display: none;
+}
+
+.divider {
   width: 6.5em;
   height: 8px;
   background-color: #e00504;
 }
 
-.h2{
+.welcomeTitle{
   font-family: "Orgon W03 Bold";
   margin-left: .7em;
   margin-right: .7em;
@@ -36,19 +38,11 @@
   font-size: 1.3em;
 }
 
-.img {
-  display: none;
-}
-
-.filters{
+.filterContent{
   margin-top: 1em;
 }
 
-.orderDesktop{
-  display: none;
-}
-
-.data {
+.orderSection {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +53,19 @@
   background-image: url('../../assets/background3.jpg');
 }
 
-.dataOrder{
+.driverText,
+.nationalityText {
+  color: #fff;
+  margin-left: 1em;
+  margin-right: 1em;
+  font-size: .8em;
+}
+
+.orderForDesktop{
+  display: none;
+}
+
+.orderForMobile{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,37 +76,22 @@
   background-image: url('../../assets/background3.jpg');
 }
 
-.section {
+.driverSection {
   margin-top: 1em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-.h3,
-.nationality {
-  font-family: "Formula1 Display Bold Bold";
-  color: #fff;
-  margin-left: 1em;
-  margin-right: 1em;
-  font-size: .8em;
-}
+
 
 @media screen and (min-width: 820px) {
 
-  .content{
+  .masthead{
     height: 20vh;
   }
 
-  .h1{
+  .mastheadTitle{
     font-size: 3.5em;
-  }
-
-  .line{
-    width: 12%
-  }
-
-  .h2{
-    margin-left: 1.5em;
   }
 
   .img{
@@ -108,29 +99,15 @@
     height: 100%;
   }
 
-  .dataOrder{
-    display: none;
+  .divider{
+    width: 12%
   }
 
-  .orderDesktop{
-    display: block;
+  .welcomeTitle{
+    margin-left: 1.5em;
   }
 
-  .section,
-  .data {
-    margin-left: 2em;
-    margin-right: 2em;
-  }
-
-  .nationality {
-    font-size: 1em;
-  }
-
-  .h3{
-    font-size: 1em;
-  }
-
-  .filters{
+  .filterContent{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -138,4 +115,24 @@
     margin-top: 4em;
     margin-bottom: 1em;
   }
+
+  .driverSection,
+  .orderSection {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .driverText,
+  .nationalityText{
+    font-size: 1em;
+  }
+
+  .orderForDesktop{
+    display: block;
+  }
+
+  .orderForMobile{
+    display: none;
+  }
+
 }

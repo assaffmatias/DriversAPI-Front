@@ -17,15 +17,15 @@ const NavBar = ({ onSearch }) => {
     }
 
     return (
-        <div className={style.divContainer}>
-            <div className={style.content}>
-                <Link className={style} to={PATHROUTES.HOME}>
+        <div className={style.container}>
+            <div>
+                <Link to={PATHROUTES.HOME}>
                     <img src={logo} alt="" className={style.logo} />
                 </Link>
                 <Link className={style.link} to={PATHROUTES.DRIVERS}>DRIVERS</Link>
                 <Link className={style.link} to={PATHROUTES.CREATE}>CREATE</Link>
             </div>
-            <div className={style.search}>
+            <div className={style.searchContent}>
                 <SearchBar onSearch={onSearch}></SearchBar>
             </div>
         </div>

@@ -13,7 +13,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div className={style.divContainer}>
+        <div className={style.mainContainer}>
             <CardsContainer />
         </div>
     )

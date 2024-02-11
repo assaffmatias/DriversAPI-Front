@@ -9,13 +9,8 @@
   align-items: center;
 }
 
-/* .value {
-  display: none;
-} */
-
 .value {
   font-family: "Formula1 Display Bold Bold";
-  font-weight: 500;
   background-color: transparent;
   border: none;
   padding: 10px;
@@ -28,31 +23,16 @@
 }
 
 .value.selected {
-  color: #e00504;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
   .value {
-    display: block;
-    font-family: "Formula1 Display Bold Bold";
-    font-weight: 500;
-    background-color: transparent;
-    border: none;
-    padding: 10px;
-    color: #fff;
-    display: flex;
-    cursor: pointer;
-    border-radius: 4px;
-    margin: 0 10px 0 10px;
     font-size: 1em;
   }
 
   .value:hover {
-    color: #e00504;
-  }
-
-  .value.selected {
-    color: #e00504;
+    color: #fff;
   }
 
 }

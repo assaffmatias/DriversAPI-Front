@@ -1,20 +1,18 @@
-@import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
 @import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
-
 
 .container {
   display: flex;
   flex-direction: column;
 }
 
-.container2 {
+.mainContent {
   position: relative;
   width: 100vw;
   height: 850px;
   background-color: #0d1117;
 }
 
-.div_video {
+.videoSection {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -43,31 +41,31 @@
   height: 50px;
 }
 
-.h2 {
-  font-family: "Formula1 Display Bold Bold";
+.titleLogo {
   font-size: 2.5em;
   margin-top: 0;
   margin-bottom: 1em;
   text-align: center;
 }
 
-.drivers{
+.titleDrivers{
   color: #fff;
   margin-right: .1em;
 }
 
-.api{
+.titleApi{
   color: #e00504;
   margin-left: .1em;
 }
 
-.divButtons {
+.buttonContainer {
   display: flex;
   flex-direction: column;
 }
 
-.button,
-.button1 {
+.welcomeButton,
+.aboutButton,
+.createButton {
   font-family: "Formula1 Display Bold Bold";
   background-color: #e00504;
   border: none;
@@ -76,51 +74,46 @@
   height: 3.5em;
   margin: 0.4em;
   color: #fff;
+  transition: .3s;
 }
 
-.button1 {
+.welcomeButton {
   background-color: #fff;
   color: #e00504;
   font-weight: bold;
 }
 
-.line {
+.divider {
   width: 25%;
   height: 8px;
   background-color: #e00504;
   color: transparent;
 }
 
-.teams {
-  width: 35px;
-}
-
-.div_wellcome {
+.welcomeSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: #e00504; */
   align-items: center;
   width: 100%;
   margin-top: 1em;
   margin-bottom: 2em;
 }
 
-.wellcome {
-  font-family: "Formula1 Display Bold Bold";
+.wellcomeTitle {
   font-size: 3.5em;
   color: #0d1117;
   margin-bottom: 0;
 }
 
-.p {
+.wellcomeText {
   font-family: "Orgon W03 Bold";
   color: #0d1117c4;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.button3 {
+.startNowButton {
   font-family: "Formula1 Display Bold Bold";
   background-image: url('../../assets/background3.jpg');
   border: none;
@@ -131,7 +124,7 @@
   color: #fff;
 }
 
-.div_create{
+.createSection{
   height: 500px;
   background-image: url(../../assets/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDIzLTA1L2YxbTIzLWFubm91bmNlLXRyYWlsZXItc2NyZWVuc2hvdC0wMV8xOTIweDEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxOTIwfX19.jpg);
   background-size: cover;
@@ -148,45 +141,43 @@
   padding-right: 1em;
 }
 
-.create{
-  font-family: "Formula1 Display Bold Bold";
+.createTitle{
   color: #fff;
   margin-bottom: 0;
   margin-top: .5em;
 }
 
-.div_p_create{
+.createContentText{
   width: 90%;
 }
 
-.p_create{
+.createText{
   font-family: "Orgon W03 Bold";
   color: #fff;
   margin-top: 0;
 }
 
-.div_technologies{
+.techSection{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2em;
 }
 
-.technologies{
-  font-family: "Formula1 Display Bold Bold";
+.techTitle{
   font-size: 2em;
   color: #0d1117;
   margin-bottom: .3em;
 }
 
-.line_title {
+.lineTechTitle {
   width: 150px;
   height: 12px;
   background-color: #e00504;
   color: transparent;
 }
 
-.div_logos{
+.logoSection{
   display: flex;
   flex-wrap: wrap;
   margin-left: 1em;
@@ -194,7 +185,7 @@
   margin-bottom: 4em;
 }
 
-.logos_content{
+.logoContent{
   display: flex;
   justify-content: center;
   background-image: url('../../assets/background3.jpg');
@@ -205,7 +196,7 @@
   align-items: center;
 }
 
-.logos_tech{
+.logoItem{
   width: 80px;
 }
 
@@ -214,10 +205,9 @@
   display: flex;
   justify-content: flex-end;
   background-color: #0d1117;
-  /* border-bottom: 4px solid rgb(255, 102, 0); */
 }
 
-.p_footer{
+.footerText{
   font-family: "Orgon W03 Bold";
   color: #8d8d8d;
   padding-right: 10px;
@@ -227,7 +217,7 @@
 
 @media only screen and (min-width: 768px) {
 
-  .container2 {
+  .mainContent {
     height: 600px;
   }
 
@@ -236,50 +226,51 @@
     width: 450px;
   }
 
-  .h2 {
+  .titleLogo {
     font-size: 5em;
     margin-bottom: .5em;
   }
 
-  .divButtons {
+  .buttonContainer {
     flex-direction: row;
   }
 
-  .button:hover,
-  .button1:hover {
+  .welcomeButton:hover,
+  .aboutButton:hover,
+  .createButton:hover {
     color: #0d1117;
   }
 
-  .div_wellcome{
+  .welcomeSection{
     margin-bottom: 5em;
   }
 
-  .wellcome {
+  .wellcomeTitle {
     font-size: 7em;
     margin-top: .2em;
   }
 
-  .p {
+  .wellcomeText {
     font-size: 1.5em;
   }
 
-  .div_p_create{
+  .createContentText{
     width: 50%;
   }
 
-  .p_create{
+  .createText{
     font-size: 1.3em;
   }
 
-  .technologies{
+  .techTitle{
     font-size: 3em;
   }
 
-  .create{
+  .createTitle{
     font-size: 3em;
   }
 
-  .p_footer{
+  .footerText{
     font-size: .7em;
   }
 }

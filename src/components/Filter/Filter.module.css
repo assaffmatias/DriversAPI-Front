@@ -1,8 +1,10 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
 
-.content{
+.selectContent{
   display: flex;
-  float: left;
+  justify-content: flex-end;
+  margin-top: 1em;
+  margin-right: 1em;
 }
 
 .input {
@@ -28,13 +30,6 @@
 .value.selected{
   color: #fff;
   background-image: url('../../assets/background3.jpg');
-}
-
-.divSelect{
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1em;
-  margin-right: 1em;
 }
 
 .select{

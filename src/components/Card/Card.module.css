@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 .container {
     display: flex;
     float: left;
@@ -9,47 +8,49 @@
     width: 100%;
 }
 
-.img {
+.mainContent {
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    align-items: center;
+    font-weight: bold;
+}
+
+.driverImage {
     width: 50px;
     height: 50px;
     object-fit: cover;
     object-position: top;
 }
 
-.info {
-    display: flex;
-    font-family: 'Titillium Web', sans-serif;
-    align-items: center;
-}
-
 .link {
     text-decoration: none;
 }
 
-.h1 {
+.driverName {
     font-size: .9em;
     color: #0d1117;
     margin: 0;
     margin-left: 1em;
 }
 
-.h1:hover {
+.driverName:hover {
     cursor: pointer;
     color: #e00504;
 }
 
-.nat {
+.nationalityContent {
     font-family: 'Titillium Web', sans-serif;
     margin-right: 1em;
     text-align: start;
 }
 
-.nationality {
+.nationalityTitle {
     font-size: .9em;
     margin-left: 1em;
 }
 
-.button{
+.deleteButton{
     font-family: 'Titillium Web', sans-serif;
     cursor: pointer;
     border: none;
@@ -64,16 +65,16 @@
         margin-bottom: 1em;
     }
 
-    .img {
+    .driverImage {
         width: 90px;
         height: 90px;
     }
 
-    .h1 {
+    .driverName {
         font-size: 1.1em;
     }
 
-    .nationality {
+    .nationalityTitle {
        font-size: 1.1em;
     }
 }

@@ -170,42 +170,42 @@ const Form = () => {
 
     return (
         <div className={style.container}>
-            <div className={style.content}>
-                <h1 className={style.h1}>CREATE</h1>
+            <div className={style.masthead}>
+                <h1 className={style.mastheadTitle}>CREATE</h1>
                 <img src={bg} alt="" className={style.img} />
             </div>
-            <div className={style.line}></div>
+            <div className={style.divider}></div>
 
-            <form onSubmit={submitHandler} className={style.form}>
-                <div className={style.flex}>
-                    <label htmlFor="" className={style.lab}>First name *</label>
+            <form onSubmit={submitHandler} className={style.formContainer}>
+                <div className={style.sectionForm}>
+                    <label htmlFor="" className={style.labelText}>First name *</label>
                     <label htmlFor="" className={style.label}>
                         <input type="text" value={form.name} onChange={changeHandler} name='name' className={`${style.input} ${errors.name ? style.error : style.success}`} placeholder='John' />
                     </label>
-                    <label htmlFor="" className={style.lab}>Last name *</label>
+                    <label htmlFor="" className={style.labelText}>Last name *</label>
                     <label htmlFor="" className={style.label}>
                         <input type="text" value={form.surname} onChange={changeHandler} name='surname' className={`${style.input} ${errors.surname ? style.error : style.success}`} placeholder='Smith' />
                     </label>
-                    <label htmlFor="" className={style.lab}>Image URL</label>
+                    <label htmlFor="" className={style.labelText}>Image URL</label>
                     <label htmlFor="" className={style.label}>
                         <input type="text" value={form.image} onChange={changeHandler} name='image' className={style.input} placeholder='https://url.com/image.jpg' />
                     </label>
-                    <label htmlFor="" className={style.lab}>Description *</label>
+                    <label htmlFor="" className={style.labelText}>Description *</label>
                     <label htmlFor="" className={style.label}>
                         <input type="text" value={form.description} onChange={changeHandler} name='description' className={style.input} placeholder='' />
                     </label>
-                    <label htmlFor="" className={style.lab}>Birthdate *</label>
+                    <label htmlFor="" className={style.labelText}>Birthdate *</label>
                     <label htmlFor="" className={style.label}>
                         <input type="date" value={form.dob} onChange={changeHandler} name='dob' className={style.input} placeholder='mm/dd/yyyy' />
                     </label>
-                    <label htmlFor="" className={style.lab}>Nationality *</label>
+                    <label htmlFor="" className={style.labelText}>Nationality *</label>
                     <label htmlFor="nationality" className={style.label}>
                         <select
                             id="nationality"
                             name="nationality"
                             value={form.nationality}
                             onChange={changeHandler}
-                            className={style.selectNat}
+                            className={style.selectNationality}
                         >
                             <option value="" disabled>Select Nationality</option>
                             {nationalities.map((nationality) => (
@@ -213,7 +213,7 @@ const Form = () => {
                             ))}
                         </select>
                     </label>
-                    <label htmlFor="" className={style.lab}>Team *</label>
+                    <label htmlFor="" className={style.labelText}>Team *</label>
                     <label htmlFor="" className={style.label}>
                         <select name="teams" id="" value={form.teams} onChange={changeHandler} multiple className={style.select}>
                             {teams.map((team) => (
@@ -221,7 +221,6 @@ const Form = () => {
                             ))}
                         </select>
                     </label>
-
                     <button type="submit" className={style.button}>Create</button>
                 </div>
             </form>

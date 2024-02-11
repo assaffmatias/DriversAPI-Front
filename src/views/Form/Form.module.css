@@ -1,7 +1,7 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
 @import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
 
-.content {
+.masthead {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -9,38 +9,39 @@
   background-image: url('../../assets/background1.jpg');
 }
 
-.h1 {
+.mastheadTitle {
   font-family: "Formula1 Display Bold Bold";
   color: #ebeaea;
   margin: 0;
   margin-left: 0.6em;
 }
 
-.line {
+.img {
+  display: none;
+}
+
+.divider {
   width: 6.5em;
   height: 8px;
   background-color: #e00504;
 }
 
-.img {
-  display: none;
-}
 
-.form {
+.formContainer {
   display: flex;
   justify-content: center;
   margin-top: 2em;
   width: 100vw;
 }
 
-.flex {
+.sectionForm {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90vw;
 }
 
-.lab{
+.labelText{
   display: flex;
   width: 100%;
   margin-bottom: .3em;
@@ -65,7 +66,7 @@
   color: #0d11176e;
 }
 
-.selectNat {
+.selectNationality {
   font-family: "Formula1 Display Bold Bold";
   height: 2.5em;
   border: 1px solid #0d1117;
@@ -119,15 +120,15 @@
 } */
 
 @media screen and (min-width: 768px) {
-  .content {
+  .masthead {
     height: 20vh;
   }
 
-  .h1 {
+  .mastheadTitle {
     font-size: 3.5em;
   }
 
-  .line {
+  .divider {
     width: 12%
   }
 
