@@ -190,26 +190,26 @@
   justify-content: center;
   background-image: url('../../assets/background3.jpg');
   margin: 1em 1em;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 10px;
   align-items: center;
 }
 
 .logoItem{
-  width: 80px;
+  width: 60px;
+  border-radius: 10px;
 }
 
 .footer{
   margin-top: 2em;
   display: flex;
   justify-content: flex-end;
-  background-color: #0d1117;
 }
 
 .footerText{
   font-family: "Orgon W03 Bold";
-  color: #8d8d8d;
+  color: #0d1117;
   padding-right: 10px;
   padding-left: 10px;
   font-size: .5em;
@@ -236,8 +236,7 @@
   }
 
   .welcomeButton:hover,
-  .aboutButton:hover,
-  .createButton:hover {
+  .aboutButton:hover {
     color: #0d1117;
   }
 

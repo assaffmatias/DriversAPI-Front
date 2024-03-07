@@ -34,8 +34,8 @@ const Landing = () => {
                         <a href="#wellcome">
                             <button className={style.welcomeButton}>WELCOME</button>
                         </a>
-                        <Link to={PATHROUTES.ABOUT}>
-                            <button className={style.aboutButton}>ABOUT ME</button>
+                        <Link>
+                            <button className={style.aboutButton}>ABOUT</button>
                         </Link>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ const Landing = () => {
             </div>
             <div>
                 <footer className={style.footer}>
-                    <p className={style.footerText}>© 2024 Matias Assaff. All rights reserved. F1® Drivers API is protected by copyright. </p>
+                    <p className={style.footerText}>Built by Matias Assaff</p>
                 </footer>
             </div>
 
