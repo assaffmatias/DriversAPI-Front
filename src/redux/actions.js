@@ -102,8 +102,6 @@ export const deleteDriver = (id) => {
             // await axios.delete(`http://localhost:3001/drivers/${id}`);
 
             dispatch({ type: DELETE_DRIVER, payload: id });
-
-            swal("Deleted Driver", "Press OK to continue", "success");
         } catch (error) {
             console.error("Error deleting driver", error);
         }
