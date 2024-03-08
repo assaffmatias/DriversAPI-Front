@@ -8,6 +8,10 @@ const NavBar = ({ onSearch }) => {
     const location = useLocation();
     const {id} = useParams()
 
+    if (!Object.values(PATHROUTES).includes(location.pathname)) {
+        return null;
+    }
+
     if (location.pathname.includes(`/detail`)) {
         return null;
     }

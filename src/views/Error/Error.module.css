@@ -3,7 +3,7 @@
 
 .container{
     width: 100vw;
-    height: 88vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -24,11 +24,11 @@
 
 .h1{
     margin: 0;
-    margin-top: 0.3em;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     font-family: "Formula1 Display Bold Bold";
     font-size: 6em;
     text-align: center;
+    color: #15151e;
 }
 
 .button{

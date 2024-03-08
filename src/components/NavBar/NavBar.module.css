@@ -4,7 +4,7 @@
 .container {
     display: flex;
     align-items: center;
-    background: #0d1117;
+    background: #000;
     width: 100vw;
     height: 8vh;
 }
@@ -17,7 +17,6 @@
 
 .link {
     font-family: "Russo One", sans-serif;
-    font-weight: 600;
     color: #fff;
     text-decoration: none;
     margin-left: 2em;

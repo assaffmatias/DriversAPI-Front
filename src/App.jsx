@@ -1,5 +1,5 @@
 import PATHROUTES from './helpers/PathRoutes';
-import { Detail, Form, Home, Landing, About, Error } from './views';
+import { Detail, Form, Home, Landing, Error } from './views';
 import {Routes, Route} from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 
@@ -13,7 +13,6 @@ function App() {
         <Route path={PATHROUTES.DRIVERS} element={<Home/>}/>
         <Route path={PATHROUTES.DETAIL} element={<Detail />}/>
         <Route path={PATHROUTES.CREATE} element={<Form />}/>
-        <Route path={PATHROUTES.ABOUT} element={<About />} />
         <Route path={PATHROUTES.ERROR} element={<Error />}/>
       </Routes>
     </div>

@@ -157,50 +157,40 @@
   margin-top: 0;
 }
 
-.techSection{
+.contactSection{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2em;
 }
 
-.techTitle{
-  font-size: 2em;
+.contactTitle{
+  font-size: 3em;
   color: #0d1117;
   margin-bottom: .3em;
 }
 
-.lineTechTitle {
+.lineContactTitle {
   width: 150px;
   height: 12px;
   background-color: #e00504;
   color: transparent;
 }
 
-.logoSection{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 1em;
-  margin-right: 1em;
+.svgContent{
   margin-top: 2em;
-  margin-bottom: 4em;
 }
 
-.logoContent{
-  display: flex;
-  justify-content: center;
-  background-image: url('../../assets/background3.jpg');
-  margin: 1em 1em;
-  width: 80px;
-  height: 80px;
-  border-radius: 10px;
-  align-items: center;
+.svg {
+  color: #000;
+  width: 45px;
+  height: 45px;
+  margin: 0 2em;
 }
 
-.logoItem{
-  width: 60px;
-  border-radius: 10px;
+.svg:hover {
+  transition: .5s;
+    transform: scale(1.05);
 }
 
 .footer{

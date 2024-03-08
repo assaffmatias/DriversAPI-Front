@@ -3,7 +3,6 @@ const PATHROUTES = {
     DRIVERS: '/drivers',
     DETAIL: '/detail/:id',
     CREATE: '/create',
-    ABOUT: '/about',
     ERROR: '*'
 };
 
