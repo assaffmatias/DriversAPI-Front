@@ -48,12 +48,12 @@
   text-align: center;
 }
 
-.titleDrivers{
+.titleDrivers {
   color: #fff;
   margin-right: .1em;
 }
 
-.titleApi{
+.titleApi {
   color: #e00504;
   margin-left: .1em;
 }
@@ -124,7 +124,7 @@
   color: #fff;
 }
 
-.createSection{
+.createSection {
   height: 500px;
   background-image: url(../../assets/eyJidWNrZXQiOiJmcm9udGllci1jbXMiLCJrZXkiOiIyMDIzLTA1L2YxbTIzLWFubm91bmNlLXRyYWlsZXItc2NyZWVuc2hvdC0wMV8xOTIweDEwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxOTIwfX19.jpg);
   background-size: cover;
@@ -132,79 +132,79 @@
   margin-bottom: 2em;
   background-position: center;
   border-top: 3px solid #e00504;
-  mask-image: linear-gradient(
-    to bottom,
-    white 60%,
-    transparent 95%
-  );
+  mask-image: linear-gradient(to bottom,
+      white 60%,
+      transparent 95%);
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.createTitle{
+.createTitle {
   color: #fff;
   margin-bottom: 0;
   margin-top: .5em;
 }
 
-.createContentText{
+.createContentText {
   width: 90%;
 }
 
-.createText{
+.createText {
   font-family: "Orgon W03 Bold";
   color: #fff;
   margin-top: 0;
 }
 
-.contactSection{
+.contactSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 2em;
 }
 
-.contactTitle{
-  font-size: 3em;
+.contactTitle {
+  font-size: 2em;
   color: #0d1117;
   margin-bottom: .3em;
 }
 
 .lineContactTitle {
-  width: 150px;
-  height: 12px;
+  width: 100px;
+  height: 8px;
   background-color: #e00504;
   color: transparent;
 }
 
-.svgContent{
-  margin-top: 2em;
+.svgContent {
+  margin-top: 3em;
 }
 
 .svg {
-  color: #000;
-  width: 45px;
-  height: 45px;
+  color: #0d1117;
+  width: 25px;
+  height: 25px;
   margin: 0 2em;
+  transition: .5s;
 }
 
 .svg:hover {
   transition: .5s;
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
-.footer{
+.footer {
   margin-top: 2em;
   display: flex;
   justify-content: flex-end;
 }
 
-.footerText{
+.footerText {
   font-family: "Orgon W03 Bold";
   color: #0d1117;
   padding-right: 10px;
   padding-left: 10px;
   font-size: .5em;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {
@@ -232,7 +232,7 @@
     color: #0d1117;
   }
 
-  .welcomeSection{
+  .welcomeSection {
     margin-bottom: 5em;
   }
 
@@ -245,23 +245,33 @@
     font-size: 1.5em;
   }
 
-  .createContentText{
+  .createContentText {
     width: 50%;
   }
 
-  .createText{
+  .createText {
     font-size: 1.3em;
   }
 
-  .techTitle{
+  .createTitle {
     font-size: 3em;
   }
 
-  .createTitle{
+  .contactTitle {
     font-size: 3em;
   }
 
-  .footerText{
+  .lineContactTitle {
+    width: 150px;
+    height: 10px;
+  }
+
+  .svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footerText {
     font-size: .7em;
   }
 }
