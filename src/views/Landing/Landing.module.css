@@ -9,7 +9,7 @@
   position: relative;
   width: 100vw;
   height: 850px;
-  background-color: #0d1117;
+  background-color: #000;
 }
 
 .videoSection {
@@ -102,13 +102,13 @@
 
 .wellcomeTitle {
   font-size: 3.5em;
-  color: #0d1117;
+  color: #15151e;
   margin-bottom: 0;
 }
 
 .wellcomeText {
   font-family: "Orgon W03 Bold";
-  color: #0d1117c4;
+  color: #15151ed3;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -164,7 +164,7 @@
 
 .contactTitle {
   font-size: 2em;
-  color: #0d1117;
+  color: #15151e;
   margin-bottom: .3em;
 }
 
@@ -180,7 +180,7 @@
 }
 
 .svg {
-  color: #0d1117;
+  color: #15151e;
   width: 25px;
   height: 25px;
   margin: 0 2em;
@@ -200,7 +200,7 @@
 
 .footerText {
   font-family: "Orgon W03 Bold";
-  color: #0d1117;
+  color: #15151e;
   padding-right: 10px;
   padding-left: 10px;
   font-size: .5em;
