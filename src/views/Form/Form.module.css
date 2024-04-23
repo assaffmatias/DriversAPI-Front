@@ -5,7 +5,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 12vh;
   background-image: url('../../assets/default-media.svg');
   mask-image: linear-gradient(
     to bottom,
@@ -17,8 +16,9 @@
 .mastheadTitle {
   font-family: "Formula1 Display Bold Bold";
   color: #ebeaea;
-  margin: 0;
   margin-left: 0.6em;
+  margin-top: 1em;
+  margin-bottom: 0;
 }
 
 .formContainer {
@@ -98,9 +98,13 @@
   cursor: pointer;
   background-color: #e00504;
   color: #fff;
-  transition: 1s;
+  transition: 0.3s;
   margin-top: 2em;
   border-radius: 0 0 10px 0;
+}
+
+.button:hover{
+  color: #0d1117;
 }
 
 /* .error {
@@ -112,10 +116,6 @@
 } */
 
 @media screen and (min-width: 768px) {
-  .masthead {
-    height: 20vh;
-  }
-
   .mastheadTitle {
     font-size: 3.5em;
   }

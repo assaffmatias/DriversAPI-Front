@@ -20,6 +20,7 @@
 .mastheadTitle {
   color: #ebeaea;
   margin-left: 0.6em;
+  margin-top: 1em;
   margin-bottom: 0;
 }
 
@@ -29,7 +30,7 @@
   margin-right: .7em;
   margin-bottom: 0;
   color: #fff;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 .filterContent{
@@ -88,6 +89,7 @@
 
   .welcomeTitle{
     margin-left: 1.5em;
+    font-size: 1.3em;
   }
 
   .filterContent{
