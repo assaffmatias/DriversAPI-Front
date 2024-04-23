@@ -5,7 +5,7 @@ import Filter from "../Filter/Filter"
 import Order from "../Order/Order";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import bg from '../../assets/background2.png'
+// import bg from '../../assets/background2.png'
 import { deleteDriver } from "../../redux/actions";
 import swal from 'sweetalert';
 
@@ -53,9 +53,7 @@ const CardsContainer = () => {
         <div className={style.container}>
             <div className={style.masthead}>
                 <h1 className={style.mastheadTitle}>DRIVERS</h1>
-                <img src={bg} alt="" className={style.img} />
             </div>
-            <div className={style.divider}></div>
             <h2 className={style.welcomeTitle}>Discover comprehensive data on F1® drivers through our API. Seamlessly create new drivers with ease</h2>
             <div className={style.filterContent}>
                 <Filter onFilterChange={() => setPage(1)} />
@@ -76,7 +74,7 @@ const CardsContainer = () => {
                 {filteredDrivers
                     .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
                     .map((driver, index) => {
-                        const backgroundColor = index % 2 === 0 ? 'transparent' : '#0d11172c';
+                        const backgroundColor = index % 2 === 0 ? 'transparent' : '#181d29';
                         return (
                             <Card
                                 id={driver.id}

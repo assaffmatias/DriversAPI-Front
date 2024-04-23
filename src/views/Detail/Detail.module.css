@@ -12,14 +12,16 @@
     margin: auto;
     margin-top: 1em;
     font-size: 1.7em;
-    color: #15151e;
+    color: #fff;
 }
 
 .mainContent {
     width: 90vw;
     height: 70vh;
     margin-top: 1em;
-    background-image: url('../../assets/background3.jpg');
+    background: rgb(38, 54, 87);
+    background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
+    border-radius: 8px;
 }
 
 .section {
@@ -48,13 +50,14 @@
 }
 
 .closeButton {
+    display: flex;
     border: none;
     background-color: #e00504;
     color: #fff;
     font-weight: bold;
-    font-size: 1.5em;
-    padding: 5px 10px;
     cursor: pointer;
+    margin: 1em;
+    width: 40px;
 }
 
 .name {
@@ -97,6 +100,7 @@
     border: none;
     background-color: transparent;
     color: #fff;
+    border-bottom: 2px solid transparent;
 }
 
 .button:hover {
@@ -135,18 +139,18 @@
         height: 80vh;
     }
 
-    .title{
+    .title {
         line-height: 0;
         font-size: 3em;
         margin-bottom: 0.8em;
     }
 
-    .img{
+    .img {
         width: 200px;
         height: 210px;
     }
 
-    .nameContainer{
+    .nameContainer {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -154,20 +158,20 @@
         margin-top: 4em;
     }
 
-    .name{
+    .name {
         margin: 0;
         font-size: 2em;
     }
 
-    .surname{
+    .surname {
         font-size: 3em;
     }
-    
-    .closeButton:hover{
+
+    .closeButton:hover {
         color: #000;
     }
 
-    .sectionData{
+    .sectionData {
         height: 50%;
     }
 
@@ -177,19 +181,21 @@
 
 }
 
-@media screen and (max-width:950px) and (min-width:768px){
-    .img{
+@media screen and (max-width:950px) and (min-width:768px) {
+    .img {
         width: 170px;
         height: 180px;
     }
-    .nameContainer{
+
+    .nameContainer {
         margin-top: 5em;
     }
-    .name{
+
+    .name {
         font-size: 1em;
     }
 
-    .surname{
+    .surname {
         font-size: 1.5em;
     }
 }

@@ -2,7 +2,7 @@ import style from './Landing.module.css';
 import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 import PATHROUTES from '../../helpers/PathRoutes';
-import video from '../../assets/Video.mp4'
+import image from '../../assets/landing.jpg'
 import divider from '../../assets/divider.svg'
 
 const Landing = () => {
@@ -17,10 +17,11 @@ const Landing = () => {
     return (
         <div className={style.container}>
             <div className={style.mainContent}>
-                <div className={style.videoSection}>
-                    <video muted autoPlay loop className={style.video}>
-                        <source src={video} type='video/mp4' />
-                    </video>
+                <div className={style.imageSection}>
+                    {/* <video muted autoPlay loop className={style.video}> */}
+                        {/* <source src={video} type='video/mp4' /> */}
+                    {/* </video> */}
+                    <img src={image} alt="" className={style.img}/>
                 </div>
                 <div className={style.content}>
                     <img src={logo} alt="" className={style.logo} />

@@ -6,7 +6,12 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 12vh;
-  background-image: url('../../assets/background1.jpg');
+  background-image: url('../../assets/default-media.svg');
+  mask-image: linear-gradient(
+    to bottom,
+    white 5%,
+    transparent 95%
+  );
 }
 
 .mastheadTitle {
@@ -15,17 +20,6 @@
   margin: 0;
   margin-left: 0.6em;
 }
-
-.img {
-  display: none;
-}
-
-.divider {
-  width: 6.5em;
-  height: 8px;
-  background-color: #e00504;
-}
-
 
 .formContainer {
   display: flex;
@@ -46,6 +40,7 @@
   width: 100%;
   margin-bottom: .3em;
   font-family: "Orgon W03 Bold";
+  color: #fff;
 }
 
 .label {
@@ -101,14 +96,11 @@
   height: 3em;
   border: none;
   cursor: pointer;
-  background-color: #0d1117;
+  background-color: #e00504;
   color: #fff;
   transition: 1s;
   margin-top: 2em;
-}
-
-.button:hover {
-  background-color: #e00504;
+  border-radius: 0 0 10px 0;
 }
 
 /* .error {
@@ -126,15 +118,6 @@
 
   .mastheadTitle {
     font-size: 3.5em;
-  }
-
-  .divider {
-    width: 12%
-  }
-
-  .img {
-    display: block;
-    height: 100%;
   }
 
   .select{

@@ -15,19 +15,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.8em;
-    height: 2.8em;
+    width: 3em;
+    height: 3em;
     cursor: pointer;
     margin: 2em;
     border: none;
-    background: #2c2c2c;
-    border-radius: 100%;
+    background: #fff;
+    border-radius: 0 0 10px 0;
+}
+
+.buttonNext:hover,
+.buttonPrev:hover{
+    background: #000;
 }
 
 .svg{
-    width: 15px;
-    height: 15px;
-    margin: 0 9px;
+    color: red;
 }
 
 .input {
@@ -40,11 +43,12 @@
 }
 
 .buttonPrev[disabled], .buttonNext[disabled] {
-    background-color: #474747;
+    filter: brightness(0.5);
     cursor: not-allowed;
 }
 
 .p{
     font-family: "Formula1 Display Bold Bold";
     padding-left: 0.5em;
+    color: white;
 }

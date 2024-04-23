@@ -9,24 +9,18 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 12vh;
-  background-image: url('../../assets/background1.jpg');
+  background-image: url('../../assets/default-media.svg');
+  mask-image: linear-gradient(
+    to bottom,
+    white 5%,
+    transparent 95%
+  );
 }
 
 .mastheadTitle {
   color: #ebeaea;
   margin-left: 0.6em;
-  line-height: 0;
-}
-
-.img {
-  display: none;
-}
-
-.divider {
-  width: 6.5em;
-  height: 8px;
-  background-color: #e00504;
+  margin-bottom: 0;
 }
 
 .welcomeTitle{
@@ -34,7 +28,7 @@
   margin-left: .7em;
   margin-right: .7em;
   margin-bottom: 0;
-  color: #0d1117;
+  color: #fff;
   font-size: 1.3em;
 }
 
@@ -50,7 +44,6 @@
   margin-left: 1em;
   margin-right: 1em;
   height: 2em;
-  background-image: url('../../assets/background3.jpg');
 }
 
 .driverText,
@@ -73,7 +66,6 @@
   margin-left: 1em;
   margin-right: 1em;
   height: 2em;
-  background-image: url('../../assets/background3.jpg');
 }
 
 .driverSection {
@@ -92,15 +84,6 @@
 
   .mastheadTitle{
     font-size: 3.5em;
-  }
-
-  .img{
-    display: block;
-    height: 100%;
-  }
-
-  .divider{
-    width: 12%
   }
 
   .welcomeTitle{
