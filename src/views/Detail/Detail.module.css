@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika&display=swap');
-@import url('https://db.onlinewebfonts.com/c/7a45cffcf1eee0797d566deb425ebaa9?family=Formula1+Display-Regular');
-@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
-
 .container{
     background: rgb(38, 54, 87);
     background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
@@ -32,6 +28,7 @@
     display: flex;
     flex-direction: column;
     width: 90%;
+    margin-top: 2em;
 }
 
 .mainContentDesktop{
@@ -49,7 +46,7 @@
     padding-top: 10px;
     font-size: 1em;
     margin: 0;
-    font-family: "Formula1 Display-Regular";
+    font-family: "Formula1 Display Regular";
     font-weight: 100;
 }
 
@@ -85,7 +82,8 @@
     background-color: transparent;
     color: #fff;
     cursor: pointer;
-    margin-right: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .closeButton:hover{
@@ -102,7 +100,7 @@
 }
 
 .button {
-    font-family: "Formula1 Display-Regular";
+    font-family: "Formula1 Display Regular";
     font-weight: 100;
     height: 2em;
     font-size: 1.2em;
@@ -110,7 +108,8 @@
     background-color: transparent;
     color: #fff;
     border-bottom: 2px solid transparent;
-    padding: 0 1em;
+    padding: 0;
+    margin: 0 1em;
 }
 
 .button:hover {
@@ -204,200 +203,3 @@
         width: 400px;
     }
 }
-
-/* .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title {
-    margin: auto;
-    margin-top: 1em;
-    font-size: 1.7em;
-    color: #fff;
-}
-
-.mainContent {
-    width: 90vw;
-    height: 70vh;
-    margin-top: 1em;
-    background: rgb(38, 54, 87);
-    background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
-    border-radius: 8px;
-}
-
-.section {
-    display: flex;
-}
-
-.img {
-    object-fit: cover;
-    margin: 10px;
-    width: 150px;
-    height: 150px;
-    border-radius: 8px;
-}
-
-.infoContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    height: 10em;
-}
-
-.buttonContainer {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.closeButton {
-    display: flex;
-    border: none;
-    background-color: #e00504;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 1em;
-    width: 40px;
-}
-
-.name {
-    color: #fff;
-    padding-top: 10px;
-    font-size: 1em;
-    margin: 0;
-    font-family: "Formula1 Display-Regular";
-    font-weight: 100;
-}
-
-.surname {
-    color: #fff;
-    margin: 0;
-}
-
-.divider {
-    width: 5em;
-    height: 3px;
-    background-color: #e00504;
-}
-
-.sectionData {
-    font-family: "Orgon W03 Bold";
-    height: 70%;
-    margin: 1em;
-}
-
-.descriptionContainer {
-    display: flex;
-    justify-content: space-around;
-}
-
-.button {
-    font-family: "Formula1 Display-Regular";
-    font-weight: 100;
-    height: 2em;
-    font-size: 1.2em;
-    border: none;
-    background-color: transparent;
-    color: #fff;
-    border-bottom: 2px solid transparent;
-}
-
-.button:hover {
-    cursor: pointer;
-    border-bottom: 2px solid red;
-}
-
-.show {
-    color: #fff;
-    font-size: 1.3em;
-    margin-top: 1em;
-}
-
-.showDescription {
-    max-height: 35vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-.showDescription::-webkit-scrollbar {
-    width: 12px;
-}
-
-.showDescription::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.showDescription::-webkit-scrollbar-thumb {
-    background-color: #0d111744;
-    border-radius: 20px;
-}
-
-@media screen and (min-width: 768px) {
-    .mainContent {
-        width: 50vw;
-        height: 80vh;
-    }
-
-    .title {
-        line-height: 0;
-        font-size: 3em;
-        margin-bottom: 0.8em;
-    }
-
-    .img {
-        width: 200px;
-        height: 210px;
-    }
-
-    .nameContainer {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 4em;
-    }
-
-    .name {
-        margin: 0;
-        font-size: 2em;
-    }
-
-    .surname {
-        font-size: 3em;
-    }
-
-    .closeButton:hover {
-        color: #000;
-    }
-
-    .sectionData {
-        height: 50%;
-    }
-
-    .showDescription {
-        max-height: 27vh;
-    }
-
-}
-
-@media screen and (max-width:950px) and (min-width:768px) {
-    .img {
-        width: 170px;
-        height: 180px;
-    }
-
-    .nameContainer {
-        margin-top: 5em;
-    }
-
-    .name {
-        font-size: 1em;
-    }
-
-    .surname {
-        font-size: 1.5em;
-    }
-} */

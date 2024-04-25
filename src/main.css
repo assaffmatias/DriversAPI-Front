@@ -1,9 +1,13 @@
 @import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
+@import url('https://db.onlinewebfonts.com/c/39b9c22e1faf5a3e337ea935c1d1e318?family=Formula1+Display+Regular');
+@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
+@import url('https://db.onlinewebfonts.com/c/9b8772f00b2ef2fd410dd7df694fc412?family=Orgon+W03+Light');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    /* background-image: url('../public/background.jpg'); */
     background: #15151e;
     user-select: none;
     overflow-x: hidden;

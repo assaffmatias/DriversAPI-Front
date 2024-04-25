@@ -1,6 +1,3 @@
-@import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Signika&display=swap');
-
 .container{
     width: 100vw;
     height: 100vh;
@@ -12,7 +9,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #fff; */
     align-items: center;
 }
 
@@ -28,7 +24,7 @@
     font-family: "Formula1 Display Bold Bold";
     font-size: 6em;
     text-align: center;
-    color: #15151e;
+    color: #fff;
 }
 
 .button{
@@ -37,8 +33,9 @@
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    color: #fff;
+    color: #15151e;
     width: 20em;
     height: 2.2em;
     font-size: 1.1em;
+    background-color: white;
 }

@@ -1,6 +1,3 @@
-@import url('https://db.onlinewebfonts.com/c/06d0fb8eb5251a7dba7660fab5d2f0f9?family=Formula1+Display+Bold+Bold');
-@import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
-
 .masthead {
   display: flex;
   justify-content: space-between;
@@ -57,6 +54,10 @@
   padding-left: .5em;
 }
 
+.input:focus{
+  outline: none;
+}
+
 .input::placeholder{
   color: #0d11176e;
 }
@@ -76,8 +77,12 @@
   height: 2.5em;
 }
 
+.select:focus{
+  outline: none;
+}
+
 .select::-webkit-scrollbar {
-  width: 12px;              
+  width: 8px;              
 }
 
 .select::-webkit-scrollbar-track {
@@ -85,9 +90,8 @@
 }
 
 .select::-webkit-scrollbar-thumb {
-  background-color: #0d1117;   
-  border-radius: 20px;       
-  border: 3px solid #0d1117; 
+  background-color: #0d1117;          
+  border: 3px solid #0d1117;
 }
 
 .button {
