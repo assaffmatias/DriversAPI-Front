@@ -2,7 +2,210 @@
 @import url('https://db.onlinewebfonts.com/c/7a45cffcf1eee0797d566deb425ebaa9?family=Formula1+Display-Regular');
 @import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
 
-.container {
+.container{
+    background: rgb(38, 54, 87);
+    background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div{
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.title {
+    font-size: 1.7em;
+    color: #fff;
+    margin: 0;
+}
+
+.mainContentMobile{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.mainContentDesktop{
+    display: none;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.name {
+    color: #fff;
+    padding-top: 10px;
+    font-size: 1em;
+    margin: 0;
+    font-family: "Formula1 Display-Regular";
+    font-weight: 100;
+}
+
+.surname {
+    color: #fff;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.divider {
+    width: 7em;
+    height: 3px;
+    background-color: #e00504;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    order: 1;
+    width: 100%;
+}
+
+.img{
+    width: 200px;
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.closeButton:hover{
+    color: #e00504;
+}
+
+.sectionData{
+    margin-top: 2em;
+}
+
+.descriptionContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-family: "Formula1 Display-Regular";
+    font-weight: 100;
+    height: 2em;
+    font-size: 1.2em;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    margin: 0 1em;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid red;
+}
+
+.show {
+    color: #fff;
+    font-size: 1em;
+}
+
+.showInfo{
+    margin-top: 2em;
+}
+
+.showDescription {
+    margin-top: 1em;
+    max-height: 35vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-wrap: balance;
+}
+
+.showDescription::-webkit-scrollbar {
+    width: 12px;
+}
+
+.showDescription::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.showDescription::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        height: 100vh;
+    }
+
+    .title{
+        font-size: 3em;
+    }
+
+    .mainContentMobile{
+        display: none;
+    }
+
+    .mainContentDesktop{
+        display: flex;
+        /* justify-content: space-around; */
+        width: 70vw;
+        margin-top: 2em;
+    }
+
+    .firstSection{
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .name{
+        font-size: 2.5em;
+    }
+
+    .surname{
+        font-size: 3em;
+    }
+
+    .descriptionContainer{
+        margin-top: 2em;
+    }
+
+    .button{
+        margin-left: 0;
+        font-size: 1.5em;
+    }
+
+    .show{
+        font-size: 1.1em;
+    }
+
+    .showDescription{
+        max-height: 40vh;
+    }
+
+    .img{
+        width: 400px;
+    }
+}
+
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,7 +284,6 @@
 }
 
 .sectionData {
-    /* font-family: 'Signika', sans-serif; */
     font-family: "Orgon W03 Bold";
     height: 70%;
     margin: 1em;
@@ -198,4 +400,4 @@
     .surname {
         font-size: 1.5em;
     }
-}
+} */

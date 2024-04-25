@@ -21,6 +21,8 @@
     height: 50px;
     object-fit: cover;
     object-position: top;
+    background: rgb(38, 54, 87);
+    background: linear-gradient(184deg, rgba(38, 54, 87, 1) 0%, rgba(0, 0, 0, 1) 84%);
 }
 
 .link {

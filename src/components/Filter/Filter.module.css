@@ -50,6 +50,10 @@
   margin-left: 1em;
 }
 
+.select:focus{
+  outline: none;
+}
+
 .select::-webkit-scrollbar {
   width: 12px;
 }

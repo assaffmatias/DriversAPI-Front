@@ -33,31 +33,30 @@ const Detail = () => {
     };
 
     return (
-        <div>
+        <div className={style.container}>
             {driverDetail
                 .map((driver) => {
                     return (
-                        <div className={style.container}>
-                            <h1 className={style.title}>DRIVER DETAILS</h1>
-                            <div className={style.mainContent}>
-                                <div className={style.section}>
-                                    <div>
-                                        <img className={style.img} src={driver.image} alt="" />
-                                    </div>
-                                    <div className={style.infoContainer}>
-                                        <div className={style.buttonContainer}>
-                                            <button className={style.closeButton} onClick={handleGoBack}>
-                                                <svg className={style.svg} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="none" viewBox="0 0 24 24">
-                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
-                                                </svg>
+                        <div className={style.content}>
+                            <div className={style.div}>
+                                <button className={style.closeButton} onClick={handleGoBack}>
+                                    <svg className={style.svg} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 16-4-4 4-4m-6 8-4-4 4-4" />
+                                    </svg>
+                                </button>
+                                <h1 className={style.title}>DRIVER DETAIL</h1>
+                            </div>
 
-                                            </button>
-                                        </div>
-                                        <div className={style.nameContainer}>
-                                            <h2 className={style.name}>{driver.name}</h2>
-                                            <h2 className={style.surname}>{driver.surname}</h2>
-                                            <div className={style.divider}></div>
-                                        </div>
+                            {/* Mobile */}
+                            <div className={style.mainContentMobile}>
+                                <div className={style.firstSection}>
+                                    <div className={style.nameContainer}>
+                                        <h2 className={style.name}>{driver.name}</h2>
+                                        <h2 className={style.surname}>{driver.surname}</h2>
+                                        <div className={style.divider}></div>
+                                    </div>
+                                    <div className={style.imgContainer}>
+                                        <img className={style.img} src={driver.image} alt="" />
                                     </div>
                                 </div>
                                 <div className={style.sectionData}>
@@ -67,10 +66,10 @@ const Detail = () => {
                                     </div>
                                     <div className={style.show}>
                                         {showInfo ? (
-                                            <div>
-                                                <p>Nationality: {driver.nationality}</p>
-                                                <p>Birthdate: {driver.dob}</p>
-                                                <p>Teams: {driver.teams}</p>
+                                            <div className={style.showInfo}>
+                                                <p> 🌏 {driver.nationality}</p>
+                                                <p> 📆 {driver.dob}</p>
+                                                <p> 🏁 {driver.teams}</p>
                                             </div>
                                         ) : (
                                             <div className={style.showDescription}>
@@ -78,6 +77,40 @@ const Detail = () => {
                                             </div>
                                         )}
                                     </div>
+                                </div>
+                            </div>
+
+                            {/* Desktop */}
+                            <div className={style.mainContentDesktop}>
+                                <div className={style.firstSection}>
+                                    <div className={style.nameContainer}>
+                                        <h2 className={style.name}>{driver.name}</h2>
+                                        <h2 className={style.surname}>{driver.surname}</h2>
+                                        <div className={style.divider}></div>
+                                    </div>
+                                    <div className={style.descriptionContainer}>
+                                        <button className={style.button} onClick={handleInfoClick}>Info</button>
+                                        <button className={style.button} onClick={handleDescriptionClick}>Description</button>
+                                    </div>
+                                    <div className={style.show}>
+                                        {showInfo ? (
+                                            <div className={style.showInfo}>
+                                                <p> 🌏 {driver.nationality}</p>
+                                                <p> 📆 {driver.dob}</p>
+                                                <p> 🏁 {driver.teams}</p>
+                                            </div>
+                                        ) : (
+                                            <div className={style.showDescription}>
+                                                <p>{driver.description}</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
+                                <div className={style.sectionData}>
+                                    <div className={style.imgContainer}>
+                                        <img className={style.img} src={driver.image} alt="" />
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

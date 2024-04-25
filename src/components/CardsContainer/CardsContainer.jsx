@@ -17,7 +17,7 @@ const CardsContainer = () => {
     const dispatch = useDispatch()
 
     const [page, setPage] = useState(1);
-    const [perPage, setPerPage] = useState(9)
+    const [perPage, setPerPage] = useState(5)
 
     const filteredDrivers = drivers.filter((driver) => {
         const meetsCreationFilter = filterCreated === null || driver.created === filterCreated;

@@ -1,4 +1,5 @@
 @import url('https://db.onlinewebfonts.com/c/099e7af756374661ebf92e54739ea1c3?family=Orgon+W03+Bold');
+@import url('https://db.onlinewebfonts.com/c/9b8772f00b2ef2fd410dd7df694fc412?family=Orgon+W03+Light');
 
 .container {
   display: flex;
@@ -25,12 +26,15 @@
 }
 
 .welcomeTitle{
-  font-family: "Orgon W03 Bold";
+  /* font-family: "Orgon W03 Bold"; */
+  font-family: "Orgon W03 Light";
   margin-left: .7em;
   margin-right: .7em;
   margin-bottom: 0;
+  margin-top: 2em;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .filterContent{
