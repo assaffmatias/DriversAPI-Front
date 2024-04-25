@@ -110,7 +110,7 @@
     background-color: transparent;
     color: #fff;
     border-bottom: 2px solid transparent;
-    margin: 0 1em;
+    padding: 0 1em;
 }
 
 .button:hover {
@@ -129,7 +129,7 @@
 
 .showDescription {
     margin-top: 1em;
-    max-height: 35vh;
+    max-height: 34vh;
     overflow-y: auto;
     overflow-x: hidden;
     text-wrap: balance;
