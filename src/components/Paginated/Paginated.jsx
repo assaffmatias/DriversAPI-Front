@@ -15,7 +15,7 @@ const Paginated = ({ page, setPage, max }) => {
             setPage((prevPage) => prevPage + 1);
             setInput((prevInput) => prevInput + 1);
             // Desplazar el scroll hacia arriba
-            window.scrollTo(0, 250);
+            // window.scrollTo(0, 250);
         }
     };
 
@@ -24,7 +24,7 @@ const Paginated = ({ page, setPage, max }) => {
             setPage((prevPage) => prevPage - 1);
             setInput((prevInput) => prevInput - 1);
             // Desplazar el scroll hacia arriba
-            window.scrollTo(0, 250);
+            // window.scrollTo(0, 250);
         }
     };
 
