@@ -59,15 +59,15 @@ const Paginated = ({ page, setPage, max }) => {
                     </svg>
 
                 </button>
-                <input
+                {/* <input
                     className={style.input}
                     onChange={e => onChange(e)}
                     onKeyDown={e => onKeyDown(e)}
                     name="page"
                     autoComplete="off"
                     value={input}
-                />
-                <p className={style.p}> of {max} </p>
+                /> */}
+                <p className={style.p}> {input} of {max} </p>
                 <button className={style.buttonNext} onClick={nextPage} disabled={page === max}>
                     <svg className={style.svg} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />

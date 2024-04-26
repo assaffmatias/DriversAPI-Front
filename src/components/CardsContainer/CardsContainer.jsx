@@ -71,7 +71,7 @@ const CardsContainer = () => {
             </div>
 
             <section className={style.driverSection}>
-                {filteredDrivers
+                {filteredDrivers.length === 0 ? <p className={style.p}>No pilots found</p> : filteredDrivers
                     .slice((page - 1) * perPage, (page - 1) * perPage + perPage)
                     .map((driver, index) => {
                         const backgroundColor = index % 2 === 0 ? 'transparent' : '#181d29';
