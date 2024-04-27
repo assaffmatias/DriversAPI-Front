@@ -9,11 +9,10 @@ const Filter = ({onFilterChange}) => {
     const [selectedFilter, setSelectedFilter] = useState(null);
 
     const handleFilter = (value) => {
-        // const value = event.target.value;
         setSelectedFilter(value)
         dispatch(filterDrivers(value))
         if (onFilterChange) {
-            onFilterChange(); // Llamar a la función de devolución de llamada para reiniciar la página
+            onFilterChange();
           }
     };
 
@@ -21,12 +20,11 @@ const Filter = ({onFilterChange}) => {
         const teamName = event.target.value;
         dispatch(selectTeam(teamName))
         if (onFilterChange) {
-            onFilterChange(); // Llamar a la función de devolución de llamada para reiniciar la página
+            onFilterChange();
         }
     };
 
     useEffect(() => {
-        // Reiniciar el filtro seleccionado cuando cambian los equipos
         setSelectedFilter("all");
       }, [teams]);
 

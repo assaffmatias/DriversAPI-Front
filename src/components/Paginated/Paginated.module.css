@@ -26,21 +26,6 @@
     color: red;
 }
 
-/* .input {
-    font-family: "Formula1 Display Bold Bold";
-    height: 30px;
-    width: 20px;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    color: white;
-    font-size: 1em;
-}
-
-.input:focus{
-    outline: none;
-} */
-
 .buttonPrev[disabled], .buttonNext[disabled] {
     filter: brightness(0.5);
     cursor: not-allowed;

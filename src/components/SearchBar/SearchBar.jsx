@@ -18,7 +18,6 @@ const SearchBar = ({ onSearch }) => {
 
         dispatch(getDrivers(search))
 
-        // Llamar a la función de devolución de llamada para informar sobre la búsqueda
         if (onSearch) {
             onSearch();
         }

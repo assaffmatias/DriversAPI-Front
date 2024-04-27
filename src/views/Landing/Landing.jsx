@@ -18,9 +18,6 @@ const Landing = () => {
         <div className={style.container}>
             <div className={style.mainContent}>
                 <div className={style.imageSection}>
-                    {/* <video muted autoPlay loop className={style.video}> */}
-                        {/* <source src={video} type='video/mp4' /> */}
-                    {/* </video> */}
                     <img src={image} alt="" className={style.img}/>
                 </div>
                 <div className={style.content}>

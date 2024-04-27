@@ -5,7 +5,6 @@ import Filter from "../Filter/Filter"
 import Order from "../Order/Order";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-// import bg from '../../assets/background2.png'
 import { deleteDriver } from "../../redux/actions";
 import swal from 'sweetalert';
 
@@ -29,7 +28,6 @@ const CardsContainer = () => {
     const max = Math.ceil(filteredDrivers.length / perPage);
 
     const onClose = (id) => {
-        // dispatch(deleteDriver(id))
         swal({
             title: "Are you sure?",
             text: "This pilot will be deleted",

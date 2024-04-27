@@ -8,7 +8,6 @@ const Order = () => {
     const [selectedOrder, setSelectedOrder] = useState('default');
 
     const handleOrder = (value) => {
-        // const value = event.target.value;
         setSelectedOrder(value)
         dispatch(orderDrivers(value));
     };
