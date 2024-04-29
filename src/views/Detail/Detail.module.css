@@ -20,6 +20,9 @@
 }
 
 .closeButton {
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +30,7 @@
     background-color: transparent;
     color: #fff;
     cursor: pointer;
-    margin: 0;
+    margin: 5px;
     padding: 0;
     transition: .5s;
 }
