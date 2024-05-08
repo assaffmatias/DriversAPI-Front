@@ -12,7 +12,7 @@ export const DELETE_DRIVER = "DELETE_DRIVER";
 import swal from 'sweetalert'
 
 const local = 'http://localhost:3001'
-const deploy = 'https://driversapi-back-production.up.railway.app/'
+const deploy = 'https://driversapi-back-production.up.railway.app'
 
 export const getDrivers = (name) => {
     return async function (dispatch) {
