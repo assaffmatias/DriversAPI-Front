@@ -11,11 +11,13 @@ export const RESET_DETAIL = "RESET_DETAIL";
 export const DELETE_DRIVER = "DELETE_DRIVER";
 import swal from 'sweetalert'
 
+const local = 'http://localhost:3001'
+const deploy = 'https://driversapi-back-production.up.railway.app/'
+
 export const getDrivers = (name) => {
     return async function (dispatch) {
         try {
-            let url = "https://driversapi-back-production.up.railway.app/drivers/";
-            // let url = "http://localhost:3001/drivers/";
+            let url = `${deploy}/drivers/`;
 
             if (name) {
                 url += `?name=${name}`;
@@ -33,8 +35,7 @@ export const getDrivers = (name) => {
 
 export const getDriverById = (id) => {
     return async function (dispatch) {
-        const apiData = await axios.get(`https://driversapi-back-production.up.railway.app/drivers/${id}`)
-        // const apiData = await axios.get(`http://localhost:3001/drivers/${id}`)
+        const apiData = await axios.get(`${deploy}/drivers/${id}`)
 
         const driver = apiData.data;
         dispatch({ type: GET_DRIVER_ID, payload: driver })
@@ -44,8 +45,7 @@ export const getDriverById = (id) => {
 export const postDriver = (form) => {
     return async function (dispatch) {
         try {
-            const apiData = await axios.post("https://driversapi-back-production.up.railway.app/drivers/", form);
-            // const apiData = await axios.post("http://localhost:3001/drivers/", form);
+            const apiData = await axios.post(`${deploy}/drivers/`, form);
 
             const driver = apiData.data
             dispatch({ type: POST_DRIVER, payload: driver })
@@ -59,8 +59,7 @@ export const postDriver = (form) => {
 
 export const getTeams = () => {
     return async function (dispatch) {
-        const apiData = await axios.get("https://driversapi-back-production.up.railway.app/teams/");
-        // const apiData = await axios.get("http://localhost:3001/teams/");
+        const apiData = await axios.get(`${deploy}/teams/`);
 
         const teams = apiData.data
         dispatch({ type: GET_TEAMS, payload: teams })
@@ -98,8 +97,7 @@ export const resetDetail = (value) => {
 export const deleteDriver = (id) => {
     return async function (dispatch) {
         try {
-            await axios.delete(`https://driversapi-back-production.up.railway.app/drivers/${id}`)
-            // await axios.delete(`http://localhost:3001/drivers/${id}`);
+            await axios.delete(`${deploy}/drivers/${id}`)
 
             dispatch({ type: DELETE_DRIVER, payload: id });
         } catch (error) {
