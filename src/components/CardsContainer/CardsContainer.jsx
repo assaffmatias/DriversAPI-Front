@@ -52,7 +52,7 @@ const CardsContainer = () => {
             <div className={style.masthead}>
                 <h1 className={style.mastheadTitle}>DRIVERS</h1>
             </div>
-            <h2 className={style.welcomeTitle}>Discover comprehensive data on F1® drivers through our API. Seamlessly create new drivers with ease</h2>
+            <h2 className={style.welcomeTitle}>Discover information about F1® drivers or create your own driver and associate him with your favorite team.</h2>
             <div className={style.filterContent}>
                 <Filter onFilterChange={() => setPage(1)} />
             </div>

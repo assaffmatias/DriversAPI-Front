@@ -22,7 +22,6 @@ body {
     margin: 0;
     padding: 0;
     background: #15151e;
-    user-select: none;
     overflow-x: hidden;
     -webkit-tap-highlight-color: transparent;
     -tap-highlight-color: transparent;
