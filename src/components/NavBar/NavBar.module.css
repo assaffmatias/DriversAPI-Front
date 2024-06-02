@@ -1,7 +1,7 @@
 .container {
     display: flex;
     align-items: center;
-    background: #000;
+    background: #fff;
     width: 100vw;
     height: 8vh;
 }
@@ -14,9 +14,9 @@
 
 .link {
     font-family: 'Titillium Web', sans-serif;
-    color: #fff;
+    color: #e10701;
     text-decoration: none;
-    margin-left: 2em;
+    margin-left: 1em;
     font-size: 0.8em;
     transition: .3s;
     font-weight: bold;
@@ -44,7 +44,7 @@
     }
 
     .link:hover {
-        color: #e00504;
+        color: #0d1117;
     }
 
     .searchContent {

@@ -15,29 +15,29 @@
   border-radius: 3px;
   outline: none;
   background-color: transparent;
-  color: #0d1117;
+  color: #fff;
   transition: .5s ease;
 }
 
 .input:focus {
   width: 10em;
   margin-right: 1em;
-  background-color: #fff;
+  background-color: #15151e;
 }
 
 .input::placeholder {
-  color: #0d1117;
+  color: #fff;
 }
 
 .group:focus-within .icon
  {
-  fill: black;
+  fill: #fff;
 }
 
 .icon {
   position: absolute;
   left: 1rem;
-  fill: #fff;
+  fill: #e10701;
   width: 1.2rem;
   height: 1.2rem;
 }
