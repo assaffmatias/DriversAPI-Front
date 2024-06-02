@@ -132,7 +132,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     text-wrap: balance;
-    font-family: "Formula1 Display Regular";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .showDescription::-webkit-scrollbar {
