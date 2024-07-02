@@ -5,12 +5,12 @@
     background: linear-gradient(#000000, #000000);
     width: 100vw;
     height: 8vh;
-    mask-image: linear-gradient(
+    /* mask-image: linear-gradient(
         to bottom,
         black 10%,
         transparent 100%
-      );
-      border-bottom: 4px solid white;
+      ); */
+      border-bottom: 4px solid #5e041a;
 }
 
 .logo {
